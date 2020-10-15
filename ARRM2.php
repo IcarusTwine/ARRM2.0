@@ -18,50 +18,57 @@ class ARRM2 implements ParseInterface
     {
         include (dirname(__DIR__) . '/Paths.php');
         // grab CSV files we want to use
-        $territoryTypeCsv = $this->csv("$CurrentPatch/TerritoryType");
-        $mapCsv = $this->csv("$CurrentPatch/Map");
-        $mapMarkerCsv = $this->csv("$CurrentPatch/MapMarker");
-        $placeNameCsv = $this->csv("$CurrentPatch/PlaceName");
-        $aetheryteCsv = $this->csv("$CurrentPatch/Aetheryte");
-        $EnpcResidentCsv = $this->csv("$CurrentPatch/EnpcResident");
-        $levelCsv = $this->csv("$CurrentPatch/Level");
-        $BNpcNameCsv = $this->csv("$CurrentPatch/BNpcName");
-        $gatheringpointcsv = $this->csv("$CurrentPatch/GatheringPoint");
-        $gatheringPointBaseCsv = $this->csv("$CurrentPatch/GatheringPointBase");
-        $gatheringtypecsv = $this->csv("$CurrentPatch/GatheringType");
-        $gatheringItemCsv = $this->csv("$CurrentPatch/GatheringItem");
-        $itemCsv = $this->csv("$CurrentPatch/Item");
-        $spearfishingItemCsv = $this->csv("$CurrentPatch/SpearfishingItem");
-        $eventItemCsv = $this->csv("$CurrentPatch/EventItem");
-        $gatheringPointTransientCsv = $this->csv("$CurrentPatch/GatheringPointTransient");
-        $GatheringRarePopTimeTableCsv = $this->csv("$CurrentPatch/GatheringRarePopTimeTable");
-        $ArrayEventHandlerCsv = $this->csv("$CurrentPatch/ArrayEventHandler");
-        $BNpcBaseCsv = $this->csv("$CurrentPatch/BNpcBase");
-        $QuestCsv = $this->csv("$CurrentPatch/Quest");
-        $WarpCsv = $this->csv("$CurrentPatch/Warp");
-        $GilShopCsv = $this->csv("$CurrentPatch/GilShop");
-        $EObjNameCsv = $this->csv("$CurrentPatch/EObjName");
-        $EObjCsv = $this->csv("$CurrentPatch/EObj");
-        $ExportedSGCsv = $this->csv("$CurrentPatch/ExportedSG");
-        $AdevntureCsv = $this->csv("$CurrentPatch/Adventure");
-        $EmoteCsv = $this->csv("$CurrentPatch/Emote");
-        $TreasureSpotCsv = $this->csv("$CurrentPatch/TreasureSpot");
-        $TreasureHuntRankCsv = $this->csv("$CurrentPatch/TreasureHuntRank");
-        $FateCsv = $this->csv("$CurrentPatch/Fate");
-        $fishingspotcsv = $this->csv("$CurrentPatch/FishingSpot");
-        $EnpcBaseCsv = $this->csv("$CurrentPatch/EnpcBase");
-        $TribeCsv = $this->csv("$CurrentPatch/Tribe");
-        $RaceCsv = $this->csv("$CurrentPatch/Race");
-        $BGMCsv = $this->csv("$CurrentPatch/BGM");
-        $WeatherRateCsv = $this->csv("$CurrentPatch/WeatherRate");
-        $WeatherCsv = $this->csv("$CurrentPatch/Weather");
-        $BGMSwitchCsv = $this->csv("$CurrentPatch/BGMSwitch");
-        $BGMSituationCsv = $this->csv("$CurrentPatch/BGMSituation");
-        $AchievementCsv = $this->csv("$CurrentPatch/Achievement");
-        $ActionCsv = $this->csv("$CurrentPatch/Action");
-        $VFXCsv = $this->csv("$CurrentPatch/VFX");
-        $CustomTalkCsv = $this->csv("$CurrentPatch/CustomTalk");
-        $LogMessageCsv = $this->csv("$CurrentPatch/LogMessage");
+        $territoryTypeCsv = $this->csv("TerritoryType");
+        $mapCsv = $this->csv("Map");
+        $mapMarkerCsv = $this->csv("MapMarker");
+        $placeNameCsv = $this->csv("PlaceName");
+        $aetheryteCsv = $this->csv("Aetheryte");
+        $EnpcResidentCsv = $this->csv("EnpcResident");
+        $levelCsv = $this->csv("Level");
+        $BNpcNameCsv = $this->csv("BNpcName");
+        $gatheringpointcsv = $this->csv("GatheringPoint");
+        $gatheringPointBaseCsv = $this->csv("GatheringPointBase");
+        $gatheringtypecsv = $this->csv("GatheringType");
+        $gatheringItemCsv = $this->csv("GatheringItem");
+        $itemCsv = $this->csv("Item");
+        $spearfishingItemCsv = $this->csv("SpearfishingItem");
+        $eventItemCsv = $this->csv("EventItem");
+        $gatheringPointTransientCsv = $this->csv("GatheringPointTransient");
+        $GatheringRarePopTimeTableCsv = $this->csv("GatheringRarePopTimeTable");
+        $ArrayEventHandlerCsv = $this->csv("ArrayEventHandler");
+        $BNpcBaseCsv = $this->csv("BNpcBase");
+        $QuestCsv = $this->csv("Quest");
+        $WarpCsv = $this->csv("Warp");
+        $GilShopCsv = $this->csv("GilShop");
+        $EObjNameCsv = $this->csv("EObjName");
+        $EObjCsv = $this->csv("EObj");
+        $ExportedSGCsv = $this->csv("ExportedSG");
+        $AdevntureCsv = $this->csv("Adventure");
+        $EmoteCsv = $this->csv("Emote");
+        $TreasureSpotCsv = $this->csv("TreasureSpot");
+        $TreasureHuntRankCsv = $this->csv("TreasureHuntRank");
+        $FateCsv = $this->csv("Fate");
+        $fishingspotcsv = $this->csv("FishingSpot");
+        $EnpcBaseCsv = $this->csv("EnpcBase");
+        $TribeCsv = $this->csv("Tribe");
+        $RaceCsv = $this->csv("Race");
+        $BGMCsv = $this->csv("BGM");
+        $WeatherRateCsv = $this->csv("WeatherRate");
+        $WeatherCsv = $this->csv("Weather");
+        $BGMSwitchCsv = $this->csv("BGMSwitch");
+        $BGMSituationCsv = $this->csv("BGMSituation");
+        $AchievementCsv = $this->csv("Achievement");
+        $ActionCsv = $this->csv("Action");
+        $VFXCsv = $this->csv("VFX");
+        $CustomTalkCsv = $this->csv("CustomTalk");
+        $LogMessageCsv = $this->csv("LogMessage");
+        $gatheringPointBonusCsv = $this->csv("GatheringPointBonus");
+        $GatheringConditionCsv = $this->csv("GatheringCondition");
+        $GatheringPointBonusTypeCsv = $this->csv("GatheringPointBonusType");
+        $DynamicEventCsv = $this->csv("DynamicEvent");
+        $DynamicEventEnemyTypeCsv = $this->csv("DynamicEventEnemyType");
+        $DynamicEventTypeCsv = $this->csv("DynamicEventType");
+        $DynamicEventSingleBattleCsv = $this->csv("DynamicEventSingleBattle");
 
         //array for treasure spot ordering
         $TreasureSpot = [];
@@ -79,6 +86,14 @@ class ARRM2 implements ParseInterface
             $FateLocation = $FateData['Location'];
             $FateArray[$FateLocation] = $FateData;
             // example = var_dump($FateArray["4520640"]["id"]);
+        }
+
+        $DynamicFateArray = [];
+
+        foreach ($DynamicEventCsv->data as $id => $DynamicFateData) {
+            $DynamicFateLocation = $DynamicFateData['LGBEventObject'];
+            $DynamicFateArray[$DynamicFateLocation] = $DynamicFateData;
+            // example = var_dump($DynamicFateArray["4520640"]["id"]);
         }
 
         $lgbID = [];
@@ -295,7 +310,7 @@ export { mapswitch };
         //fclose($htmllink);
 
         foreach ($territoryTypeCsv->data as $id => $territoryType) {
-        	if ($id != 817) continue;
+        	if ($id != 920) continue;
         $teriID = $territoryType['id'];
         $this->io->progressAdvance();
         $teriName = $territoryType['Name'];
@@ -304,26 +319,56 @@ export { mapswitch };
         $mapMarkerLink = $mapCsv->at($mapLink)['MapMarkerRange'];
         $bgPath = $territoryType['Bg'];
         $ZoneBGMRaw = $territoryType['BGM'];
+        $ExclusiveTypeRaw = $territoryType['ExclusiveType'];
+        
+            
+        $Titleplacename = $placeNameCsv->at($territoryType['PlaceName'])['Name'];
+        $TitleplacenameSub = "";
+        if ($mapCsv->at($territoryType['Map'])['PlaceName{Sub}'] != 0) {
+                $TitleplacenameSub =  " - ". $placeNameCsv->at($mapCsv->at($territoryType['Map'])['PlaceName{Sub}'])['Name'] ."";
+        }
+        switch ($ExclusiveTypeRaw) {
+            case 0:
+            case 1:
+            case 2:
+                $ExclusiveType = "";
+            break;
+            case 3:
+                $ExclusiveType = " (Event)";
+            break;
+        }
         switch (true) {
             case $ZoneBGMRaw < 1000:
                 $ZoneBGM = "{label: '". $BGMCsv->at($territoryType['BGM'])['File']. "'},";
+                $JSONZoneBGM = $BGMCsv->at($territoryType['BGM'])['File'];
             break;
             case $ZoneBGMRaw > 1000 && $ZoneBGMRaw < 50000:
                 $daytimeBGM = $BGMCsv->at($BGMSituationCsv->at($territoryType['BGM'])['DaytimeID'])['File'];
                 $nighttimeBGM = $BGMCsv->at($BGMSituationCsv->at($territoryType['BGM'])['NightID'])['File'];
                 $battleBGM = $BGMCsv->at($BGMSituationCsv->at($territoryType['BGM'])['BattleID'])['File'];
                 $daybreakBGM = "";
+                $JSONdaybreakBGM = "";
                 if (!empty($BGMCsv->at($BGMSituationCsv->at($territoryType['BGM'])['DaybreakID'])['File'])){
                     $daybreakBGM = "\n{label: 'Dawn</b> = ". $BGMCsv->at($BGMSituationCsv->at($territoryType['BGM'])['DaybreakID'])['File'] ."'},";
+                    $JSONdaybreakBGM = $BGMCsv->at($BGMSituationCsv->at($territoryType['BGM'])['DaybreakID'])['File'];
                 }
                 $ZoneBGM = "{label: '<b>Day</b> = ". $daytimeBGM ."'},\n{label: '<b>Night</b> = ". $nighttimeBGM ."'},\n{label: '<b>Battle</b> = ". $battleBGM ."'},". $daybreakBGM ."";
+                $JSONZoneBGM = array(
+                    'Day' => $daytimeBGM,
+                    'Night' => $nighttimeBGM,
+                    'Battle' => $battleBGM,
+                    'Dawn' => $JSONdaybreakBGM,
+                );
             break;
             case $ZoneBGMRaw > 50000:
             $SwitchBGMString = [];
+            $JSONdaybreakBGM = "";
+            $JSONSwitchMusic = "";
                 foreach(range(0,21) as $switchsub) {
                     $newbgmkey = "". $ZoneBGMRaw .".". $switchsub ."";
                     if (empty($BGMSwitchCsv->at($newbgmkey)['Quest'])) continue;
                     $SwitchMusic = "{label: '". $BGMCsv->at($BGMSwitchCsv->at($newbgmkey)['BGM'])['File']. "'},";
+                    $JSONSwitchMusic = $BGMCsv->at($BGMSwitchCsv->at($newbgmkey)['BGM'])['File'];
                     if ($BGMSwitchCsv->at($newbgmkey)['Quest'] == 0) {
                         $SwitchBGMString[0] = "Initial Music = ". $SwitchMusic ."";
                     }
@@ -338,10 +383,21 @@ export { mapswitch };
                             $daybreakBGM = "";
                             if (!empty($BGMCsv->at($BGMSituationCsv->at($territoryType['BGM'])['DaybreakID'])['File'])){
                                 $daybreakBGM = "\n{label: 'Dawn</b> = ". $BGMCsv->at($BGMSituationCsv->at($BGMSwitchCsv->at($newbgmkey)['BGM'])['DaybreakID'])['File'] ."'},";
+                                $JSONdaybreakBGM = $BGMCsv->at($BGMSituationCsv->at($BGMSwitchCsv->at($newbgmkey)['BGM'])['DaybreakID'])['File'];
                             }
                             $SwitchMusic = "{label: '<b>Day</b> = ". $daytimeBGM ."'},\n{label: '<b>Night</b> = ". $nighttimeBGM ."'},\n{label: '<b>Battle</b> = ". $battleBGM ."'},". $daybreakBGM ."";
+                            $JSONSwitchMusic = array(
+                                'Day' => $daytimeBGM,
+                                'Night' => $nighttimeBGM,
+                                'Battle' => $battleBGM,
+                                'Dawn' => $JSONdaybreakBGM,
+                            );
                         }
                         $SwitchBGMString[] = "{label: 'After Quest = <a href=\\\"https://ffxiv.gamerescape.com/wiki/". $BGMquestName ."\\\">". $BGMquestName ."</a>'},\n". $SwitchMusic ."\n{label: '<hr>'},\n";
+                        $JSONZoneBGM = array(
+                            'After Quest' => $BGMquestName,
+                            'Music' => $SwitchMusic,
+                        );
                     }
                 }
                 //{label: 'SizeFactor : ". $ZoneBGM ."'},
@@ -351,6 +407,7 @@ export { mapswitch };
 
             default:
                 $ZoneBGM = "";
+                $JSONZoneBGM = "";
             break;
         }
         $fixedTime = $territoryType['FixedTime'];
@@ -358,6 +415,7 @@ export { mapswitch };
         $OffsetXMap = $mapCsv->at($mapLink)['Offset{X}'];
         $OffsetYMap = $mapCsv->at($mapLink)['Offset{Y}'];
         $MapEvent = "{label: 'Event Map? : ". $mapCsv->at($mapLink)['IsEvent'] ."'},";
+        $JSONMapEvent = $mapCsv->at($mapLink)['IsEvent'];
         $MountBool = $territoryType['Mount'];
         $StealthBool = $territoryType['Stealth'];
         $SearchBool = $territoryType['PCSearch'];
@@ -366,11 +424,14 @@ export { mapswitch };
         //WeatherRate
         $WeatherRate = $territoryType['WeatherRate'];
         $WeatherArray = [];
+        $JSONWeatherArray = [];
+        $JSONZoneArrayEventHandlerData = [];
         foreach(range(0,7) as $w) {
             if (empty($WeatherRateCsv->at($WeatherRate)["Weather[$w]"])) continue;
             $WeatherType = $WeatherCsv->at($WeatherRateCsv->at($WeatherRate)["Weather[$w]"])['Name'];
             $WeatherIcon = sprintf("%06d", $WeatherCsv->at($WeatherRateCsv->at($WeatherRate)["Weather[$w]"])['Icon']);
             $WeatherArray[] = "{label: '<img src=../assets/icons/060000/". $WeatherIcon .".png width=18/>". $WeatherType. "'},\n";
+            $JSONWeatherArray[] = $WeatherType;
         }
         $WeatherOutput = implode($WeatherArray);
         $placename = str_replace("'", "\'", $placeNameCsv->at($territoryType['PlaceName'])['Name']);
@@ -379,75 +440,79 @@ export { mapswitch };
             $placenameSub =  " - ". str_replace("'", "\'", $placeNameCsv->at($mapCsv->at($territoryType['Map'])['PlaceName{Sub}'])['Name']) ."";
         }
         $ZoneArrayEventHandlerOutput = [];
-                    foreach (range(0, 15) as $b) {
-                    $handlerData = $ArrayEventHandlerCsv->at($territoryType['ArrayEventHandler'])["Data[$b]"];
-                        if ($handlerData == 0) continue;
-                        if ($handlerData < 131000) {
-                            $questName = addslashes(preg_replace('/[^\x00-\x7F]+/', '', $QuestCsv->at($handlerData)['Name']));
-                            $ZoneArrayEventHandlerData = "Quest = <a href=\\\"https://ffxiv.gamerescape.com/wiki/". $questName ."\\\">". $questName ."</a><br>";
-                        }
-                        if ($handlerData > 131000 && $handlerData < 262000) {
-                            $ZoneArrayEventHandlerData = "Warp = ". $WarpCsv->at($handlerData)['Question'] ."<br>";
-                        }
-                        if ($handlerData > 262000 && $handlerData < 591000) {
-                            $ZoneArrayEventHandlerData = "Shop = ". $GilShopCsv->at($handlerData)['Name'] ."<br>";
-                        }
-                        if ($handlerData > 591000 && $handlerData < 721000) {
-                            $ZoneArrayEventHandlerData = "Default Talk = ". $handlerData ."<br>";
-                        }
-                        if ($handlerData > 721000 && $handlerData < 1245100) {
-                            $CustomTalkName = $CustomTalkCsv->at($handlerData)['Name'];
-                            $CustomTalkInstructionArray = [];
-                            $CustomTalkInstructionArray[0] = "<b>". $CustomTalkName ."</b><br>";
-                            foreach (range(0, 29) as $ct) {
-                                $CustomTalkInstruction = $CustomTalkCsv->at($handlerData)["Script{Instruction}[$ct]"];
-                                if (empty($CustomTalkInstruction)) continue;
-                                switch (true){
-                                    case stristr($CustomTalkInstruction,'BGM'):
-                                        $CustomTalkArgument = "BGM = ". $BGMCsv->at($CustomTalkCsv->at($handlerData)["Script{Arg}[$ct]"])['File'] ."<br>";
-                                    break;
-                                    case stristr($CustomTalkInstruction,'ACTOR'):
-                                        $CustomTalkArgument = "NPC = ". $EnpcResidentCsv->at($CustomTalkCsv->at($handlerData)["Script{Arg}[$ct]"])['Singular'] ."<br>";
-                                    break;
-                                    case stristr($CustomTalkInstruction,'ACHIEVEMENT'):
-                                        $CustomTalkArgument = "Achievement = ". $AchievementCsv->at($CustomTalkCsv->at($handlerData)["Script{Arg}[$ct]"])['Name'] ."<br>";
-                                    break;
-                                    case stristr($CustomTalkInstruction,'LOG'):
-                                        $CustomTalkArgument = "Log Message = ". addslashes($LogMessageCsv->at($CustomTalkCsv->at($handlerData)["Script{Arg}[$ct]"])['Text']) ."<br>";
-                                    break;
-                                    case stristr($CustomTalkInstruction,'QUEST'):
-                                        $questName = addslashes(preg_replace('/[^\x00-\x7F]+/', '', $QuestCsv->at($CustomTalkCsv->at($handlerData)["Script{Arg}[$ct]"])['Name']));
-                                        $CustomTalkArgument = "Quest = <a href=\\\"https://ffxiv.gamerescape.com/wiki/". $questName ."\\\">". $questName ."</a><br>";
-                                    break;
-                                    case stristr($CustomTalkInstruction,'Action'):
-                                        $CustomTalkArgument = "Action = ". $ActionCsv->at($CustomTalkCsv->at($handlerData)["Script{Arg}[$ct]"])['Name'] ."<br>";
-                                    break;
-                                    case stristr($CustomTalkInstruction,'VFX'):
-                                        $CustomTalkArgument = "VFX = ". $VFXCsv->at($CustomTalkCsv->at($handlerData)["Script{Arg}[$ct]"])['Location'] ."<br>";
-                                    break;
+        $JSONZoneArrayEventHandlerOutput = [];
+        foreach (range(0, 15) as $b) {
+            $handlerData = $ArrayEventHandlerCsv->at($territoryType['ArrayEventHandler'])["Data[$b]"];
+            $JSONhandlerData = $ArrayEventHandlerCsv->at($territoryType['ArrayEventHandler'])["Data[$b]"];
+            if ($handlerData == 0) continue;
+            if ($handlerData < 131000) {
+                $questName = addslashes(preg_replace('/[^\x00-\x7F]+/', '', $QuestCsv->at($handlerData)['Name']));
+                $ZoneArrayEventHandlerData = "Quest = <a href=\\\"https://ffxiv.gamerescape.com/wiki/". $questName ."\\\">". $questName ."</a><br>";
+            }
+            if ($handlerData > 131000 && $handlerData < 262000) {
+                $ZoneArrayEventHandlerData = "Warp = ". $WarpCsv->at($handlerData)['Question'] ."<br>";
+            }
+            if ($handlerData > 262000 && $handlerData < 591000) {
+                $ZoneArrayEventHandlerData = "Shop = ". $GilShopCsv->at($handlerData)['Name'] ."<br>";
+            }
+            if ($handlerData > 591000 && $handlerData < 721000) {
+                $ZoneArrayEventHandlerData = "Default Talk = ". $handlerData ."<br>";
+            }
+            if ($handlerData > 721000 && $handlerData < 1245100) {
+                $CustomTalkName = $CustomTalkCsv->at($handlerData)['Name'];
+                $CustomTalkInstructionArray = [];
+                $CustomTalkInstructionArray[0] = "<b>". $CustomTalkName ."</b><br>";
+                foreach (range(0, 29) as $ct) {
+                    $CustomTalkInstruction = $CustomTalkCsv->at($handlerData)["Script{Instruction}[$ct]"];
+                    if (empty($CustomTalkInstruction)) continue;
+                    switch (true){
+                        case stristr($CustomTalkInstruction,'BGM'):
+                            $CustomTalkArgument = "BGM = ". $BGMCsv->at($CustomTalkCsv->at($handlerData)["Script{Arg}[$ct]"])['File'] ."<br>";
+                        break;
+                        case stristr($CustomTalkInstruction,'ACTOR'):
+                            $CustomTalkArgument = "NPC = ". $EnpcResidentCsv->at($CustomTalkCsv->at($handlerData)["Script{Arg}[$ct]"])['Singular'] ."<br>";
+                        break;
+                        case stristr($CustomTalkInstruction,'ACHIEVEMENT'):
+                            $CustomTalkArgument = "Achievement = ". $AchievementCsv->at($CustomTalkCsv->at($handlerData)["Script{Arg}[$ct]"])['Name'] ."<br>";
+                        break;
+                        case stristr($CustomTalkInstruction,'LOG'):
+                            $CustomTalkArgument = "Log Message = ". addslashes((preg_replace('/[^\x00-\x7F]+/', '', $LogMessageCsv->at($CustomTalkCsv->at($handlerData)["Script{Arg}[$ct]"])['Text']))) ."<br>";
+                        break;
+                        case stristr($CustomTalkInstruction,'QUEST'):
+                            $questName = addslashes(preg_replace('/[^\x00-\x7F]+/', '', $QuestCsv->at($CustomTalkCsv->at($handlerData)["Script{Arg}[$ct]"])['Name']));
+                            $CustomTalkArgument = "Quest = <a href=\\\"https://ffxiv.gamerescape.com/wiki/". $questName ."\\\">". $questName ."</a><br>";
+                        break;
+                        case stristr($CustomTalkInstruction,'Action'):
+                            $CustomTalkArgument = "Action = ". $ActionCsv->at($CustomTalkCsv->at($handlerData)["Script{Arg}[$ct]"])['Name'] ."<br>";
+                        break;
+                        case stristr($CustomTalkInstruction,'VFX'):
+                            $CustomTalkArgument = "VFX = ". $VFXCsv->at($CustomTalkCsv->at($handlerData)["Script{Arg}[$ct]"])['Location'] ."<br>";
+                        break;
 
-                                    default:
-                                        $CustomTalkArgument = "". $CustomTalkInstruction ."<br>";
-                                    break;
-                                }
-                                $CustomTalkInstructionArray[] = $CustomTalkArgument;
-                            }
-                            $handlerData = implode($CustomTalkInstructionArray);
-                            $ZoneArrayEventHandlerData = "Custom Talk = ". $handlerData ."<br>";
-                        }
-                        if ($handlerData > 1245100 && $handlerData < 1703000) {
-                            $ZoneArrayEventHandlerData = "Opening = ". $handlerData ."<br>";
-                        }
-                        if ($handlerData > 1703000 && $handlerData < 1900500) {
-                            $ZoneArrayEventHandlerData = "Story = ". $handlerData ."<br>";
-                        }
-                        if ($handlerData > 1900500) {
-                            $ZoneArrayEventHandlerData = "Guide for Instance = ". $handlerData ."<br>";
-                        }
-                        $ZoneArrayEventHandlerOutput[] = "{label: '". $ZoneArrayEventHandlerData ."'},";
+                        default:
+                            $CustomTalkArgument = "". $CustomTalkInstruction ."<br>";
+                        break;
                     }
-                    $ZoneArrayEventHandlerOutput = implode($ZoneArrayEventHandlerOutput);
+                    $CustomTalkInstructionArray[] = addslashes($CustomTalkArgument);
+                }
+                $handlerData = implode($CustomTalkInstructionArray);
+                $ZoneArrayEventHandlerData = "Custom Talk = ". $handlerData ."<br>";
+            }
+            if ($handlerData > 1245100 && $handlerData < 1703000) {
+                $ZoneArrayEventHandlerData = "Opening = ". $handlerData ."<br>";
+            }
+            if ($handlerData > 1703000 && $handlerData < 1900500) {
+                $ZoneArrayEventHandlerData = "Story = ". $handlerData ."<br>";
+            }
+            if ($handlerData > 1900500) {
+                $ZoneArrayEventHandlerData = "Guide for Instance = ". $handlerData ."<br>";
+            }
+            $JSONZoneArrayEventHandlerData[] = $JSONhandlerData;
+            $ZoneArrayEventHandlerOutput[] = "{label: \"". $ZoneArrayEventHandlerData ."\"},";
+        }
+        $ZoneArrayEventHandlerOutput = implode($ZoneArrayEventHandlerOutput);
         $output = [];
+        $JSONMapMarker = [];
         foreach ($mapMarkerCsv->data as $key => $mapMarker) {
         	$keyExplode = explode(".", $key);
         	$keyID = $keyExplode[0];
@@ -484,33 +549,78 @@ export { mapswitch };
             switch ($mapMarkerCsv->at($newKey)['Data{Type}']) {
                 case 1:
                     $markerPopup = ".on('click', function(){window.location = (\"../". $mapCsv->at($markerDataKey)['TerritoryType'] ."/". $mapCsv->at($markerDataKey)['TerritoryType'] .".html\")})";
+                    $JSONmarkerPopup = "'TerritoryType' => ". $mapCsv->at($markerDataKey)['TerritoryType']. "";
                     $subtext = "<span class='w3-text-light-blue'>". $subtextRaw ."</span>";
                 break;
                 case 2:
                     $markerPopup = ".on('click', function(){window.location = (\"../". $mapCsv->at($markerDataKey)['TerritoryType'] ."/". $mapCsv->at($markerDataKey)['TerritoryType'] .".html\")})";
+                    $JSONmarkerPopup = "'TerritoryType' => ". $mapCsv->at($markerDataKey)['TerritoryType']. "";
                     $subtext = "<span class='w3-text-light-blue'>". $subtextRaw ."</span>";
                 break;
                 case 3:
                     $markerPopup = ".bindPopup(\"<center><span class='sptitle'>Aetheryte</span></center>". str_replace(array("\n\r", "\r", "\n", "\t", "\0", "\x0b"), '<br>', $placeNameCsv->at($aetheryteCsv->at($mapMarkerCsv->at($newKey)['Data{Key}'])['AethernetName'])['Name']) ."\")";
+                    $JSONmarkerPopup = array(
+                        'AetheryteID' => $mapMarkerCsv->at($newKey)['Data{Key}'],
+                        'AetheryteName' => str_replace(array("\n\r", "\r", "\n", "\t", "\0", "\x0b"), ' ', $placeNameCsv->at($aetheryteCsv->at($mapMarkerCsv->at($newKey)['Data{Key}'])['AethernetName'])['Name']),
+                    );
                     $subtext = $subtextRaw;
                 break;
                 case 4://Aethernet Shards
                     $markerPopup = ".bindPopup(\"<center><span class='sptitle'>Aethernet Shard</span></center>". str_replace(array("\n\r", "\r", "\n", "\t", "\0", "\x0b"), '<br>', $placeNameCsv->at($mapMarkerCsv->at($newKey)['Data{Key}'])['Name']) ."\")";
+                    $JSONmarkerPopup = array(
+                        'AethernetID' => $mapMarkerCsv->at($newKey)['Data{Key}'],
+                        'AethernetName' => str_replace(array("\n\r", "\r", "\n", "\t", "\0", "\x0b"), ' ', $placeNameCsv->at($aetheryteCsv->at($mapMarkerCsv->at($newKey)['Data{Key}'])['AethernetName'])['Name']),
+                    );
                     $subtext = $subtextRaw;
                 break;
 
                 default:
                     $markerPopup = "";//if > 4 then world map
                     $subtext = $subtextRaw;
+                    $JSONmarkerPopup = "";
                 break;
             }
 
-
+            $JSONMapMarker[] = array(
+                'Key' => $newKey,
+                'Icon' => $icon,
+                'coords' => array(
+                    $x / 2,
+                    $y / 2,
+                ),
+                'SubText' => $subtextRaw,
+                'SubtextOrientation' => $subtextOrientation,
+                'Type' => $mapMarkerCsv->at($newKey)['Data{Type}'],
+                'Data' => $JSONmarkerPopup,
+            );
+            //echo json_encode($JSONMapMarker, JSON_PRETTY_PRINT);
             $output[] = "\nvar markericon". $keyID ."". $keySub ." = L.icon({className: 'leaflet-div-icon2', iconUrl: '../assets/icons/". $iconPath ."/". $icon .".png',iconAnchor: [16, 16], });
 var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y ."], map.getMaxZoom()), {icon: markericon". $keyID ."". $keySub ."})". $markerPopup .".bindTooltip(\"<center>". $subtext ."</center>\", {direction: '". $subtextOrientation ."', permanent: true}).openPopup().addTo(mapmarker)";
         }
         //end of mapmarkers
         $output = implode($output);
+        $JSONBGMInfo = array(
+            'ID' => $ZoneBGMRaw, 
+            'BGM' => $JSONZoneBGM,
+        );
+        //echo json_encode($JSONBGMInfo, JSON_PRETTY_PRINT);
+        $JSONMapInfo = array(
+            'ID' => $mapLink,
+            'FixedTime' => $fixedTime,
+            'SizeFactor' => $SizeFactorMap,
+            'Offset X' => $OffsetXMap,
+            'Offset Y' => $OffsetYMap,
+            'EventMap' => $JSONMapEvent,
+            'CanMount' => $MountBool,
+            'CanStealth' => $StealthBool,
+            'SearchPlayer' => $SearchBool,
+            'Weather' => $JSONWeatherArray,
+            'ArrayHandler' => $JSONZoneArrayEventHandlerData,
+            'MapMarker' => $JSONMapMarker, 
+        );
+        //echo json_encode($JSONMapInfo, JSON_PRETTY_PRINT);
+
+        
 
         //start of level/json data
 
@@ -518,30 +628,58 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
 
         $code = substr($territoryType['Bg'], -4);
         $jsonOutput = [];
+        //JSON Array Clearout
+        $JSON_Vfx = [];
+        $JSON_PositionMarker = [];
+        $JSON_Gimmick = [];
+        $JSON_Sound = [];
+        $JSON_EventNPC = [];
+        $JSON_Aetheryte = [];
+        $JSON_EnvSpace = [];
+        $JSON_PopRange = [];
+        $JSON_exitrange = [];
+        $JSON_MapRange = [];
+        $JSON_EventObject = [];
+        $JSON_EnvLocation = [];
+        $JSON_Fate = [];
+        $JSON_EventRange = [];
+        $JSON_CollisionBox = [];
+        $JSON_LineVfx = [];
+        $JSON_ClientPath = [];
+        $JSON_TargetMarker = [];
+        $JSON_ChairMarker = [];
+        $JSON_PrefetchRange = [];
+        $JSON_Treasure = [];
+        $JSON_BNPC = [];
+        $JSON_Gathering = [];
+        $FATELayerString = [];
+        $FATELayerVar = [];
+        $FATELayerStringVar = [];
+        $FATELayerArrayVar = [];
         foreach(range(0,5) as $range) {
             if ($range == 0) {
-                if (file_exists('cache/2020.03.12.0000.0000/lgb/'. $code .'_planlive.lgb.json')) {
-                    $url = 'cache/2020.03.12.0000.0000/lgb/'. $code .'_planlive.lgb.json';
+                if (file_exists('cache/2020.10.06.0000.0000/lgb/'. $code .'_planlive.lgb.json')) {
+                    $url = 'cache/2020.10.06.0000.0000/lgb/'. $code .'_planlive.lgb.json';
                 }
             } elseif ($range == 1) {
-                if (file_exists('cache/2020.03.12.0000.0000/lgb/'. $code .'_planevent.lgb.json')) {
-                    $url = 'cache/2020.03.12.0000.0000/lgb/'. $code .'_planevent.lgb.json';
+                if (file_exists('cache/2020.10.06.0000.0000/lgb/'. $code .'_planevent.lgb.json')) {
+                    $url = 'cache/2020.10.06.0000.0000/lgb/'. $code .'_planevent.lgb.json';
                 }
             } elseif ($range == 2) {
-                if (file_exists('cache/2020.03.12.0000.0000/lgb/'. $code .'_planmap.lgb.json')) {
-                    $url = 'cache/2020.03.12.0000.0000/lgb/'. $code .'_planmap.lgb.json';
+                if (file_exists('cache/2020.10.06.0000.0000/lgb/'. $code .'_planmap.lgb.json')) {
+                    $url = 'cache/2020.10.06.0000.0000/lgb/'. $code .'_planmap.lgb.json';
                 }
             } elseif ($range == 3) {
-                if (file_exists('cache/2020.03.12.0000.0000/lgb/'. $code .'_sound.lgb.json')) {
-                    $url = 'cache/2020.03.12.0000.0000/lgb/'. $code .'_sound.lgb.json';
+                if (file_exists('cache/2020.10.06.0000.0000/lgb/'. $code .'_sound.lgb.json')) {
+                    $url = 'cache/2020.10.06.0000.0000/lgb/'. $code .'_sound.lgb.json';
                 }
             } elseif ($range == 4) {
-                if (file_exists('cache/2020.03.12.0000.0000/lgb/'. $code .'_vfx.lgb.json')) {
-                    $url = 'cache/2020.03.12.0000.0000/lgb/'. $code .'_vfx.lgb.json';
+                if (file_exists('cache/2020.10.06.0000.0000/lgb/'. $code .'_vfx.lgb.json')) {
+                    $url = 'cache/2020.10.06.0000.0000/lgb/'. $code .'_vfx.lgb.json';
                 }
             } elseif ($range == 5) {
-                if (file_exists('cache/2020.03.12.0000.0000/lgb/'. $code .'_planner.lgb.json')) {
-                    $url = 'cache/2020.03.12.0000.0000/lgb/'. $code .'_planner.lgb.json';
+                if (file_exists('cache/2020.10.06.0000.0000/lgb/'. $code .'_planner.lgb.json')) {
+                    $url = 'cache/2020.10.06.0000.0000/lgb/'. $code .'_planner.lgb.json';
                 }
             }
             if (empty($url)) continue;
@@ -604,18 +742,51 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                     $popupInfo = "";
                     $NewLineInfo = "";
                     $polygonCheck = false;
+                    $RotatedMarkerBool = false;
                     switch ($AssetType) {
                         case 1:
                             $x = $Object->Transform->Translation->x;
                             $y = $Object->Transform->Translation->z;
                             $AssetSort = "bg";
                             $lgbIcon = "060408";
+                            if (!empty($x)) {
+                                $scale = $mapCsv->at($mapLink)['SizeFactor'];
+                                $c = $scale / 100.0;
+                                $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                                $offsetValueX = ($x + $offsetx) * $c;
+                                $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                                $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                                $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                                $offsetValueY = ($y + $offsety) * $c;
+                                $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                                $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
+                            }
+                            if (empty($NpcPixelX)) {
+                                $NpcPixelX = 0;
+                                $NpcPixelY = 0;
+                            }
                         break;
                         case 3:
                             $x = $Object->Transform->Translation->x;
                             $y = $Object->Transform->Translation->z;
                             $AssetSort = "light";
                             $lgbIcon = "060002";
+                            if (!empty($x)) {
+                                $scale = $mapCsv->at($mapLink)['SizeFactor'];
+                                $c = $scale / 100.0;
+                                $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                                $offsetValueX = ($x + $offsetx) * $c;
+                                $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                                $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                                $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                                $offsetValueY = ($y + $offsety) * $c;
+                                $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                                $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
+                            }
+                            if (empty($NpcPixelX)) {
+                                $NpcPixelX = 0;
+                                $NpcPixelY = 0;
+                            }
                         break;
                         case 4:
                             $x = $Object->Transform->Translation->x;
@@ -629,6 +800,47 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $alpha = $Object->Object->Color->Alpha;
                             $color = sprintf("#%02x%02x%02x", $colorRed, $colorGreen, $colorBlue);
                             $popupInfo = "<center><span class='sptitle'>". $Name ."</span></center>". $AssetPath ."<br>Color : <div style= \\\"background: ". $color ."; display: inline-block; width: 20px;   height: 20px;\\\"></div> Alpha : ". $alpha ."";
+                            
+                            if (!empty($x)) {
+                                $scale = $mapCsv->at($mapLink)['SizeFactor'];
+                                $c = $scale / 100.0;
+                                $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                                $offsetValueX = ($x + $offsetx) * $c;
+                                $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                                $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                                $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                                $offsetValueY = ($y + $offsety) * $c;
+                                $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                                $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
+                            }
+                            if (empty($NpcPixelX)) {
+                                $NpcPixelX = 0;
+                                $NpcPixelY = 0;
+                            }
+                            $JSON_Vfx[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'AssetPath' => $AssetPath,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    ),
+                                ),
+                                'Color' => array(
+                                    'R' => $colorRed,
+                                    'G' => $colorGreen,
+                                    'B' => $colorBlue,
+                                    'R' => $alpha,
+                                )
+                            );
                         break;
                         case 5:
                             $x = $Object->Transform->Translation->x;
@@ -636,6 +848,39 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $AssetSort = "PositionMarker";
                             $lgbIcon = "060071";
                             $popupInfo = "<center><span class='sptitle'>". $Name ."</span></center><br>". $url ."<br>". $InstanceID ."";
+                            if (!empty($x)) {
+                                $scale = $mapCsv->at($mapLink)['SizeFactor'];
+                                $c = $scale / 100.0;
+                                $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                                $offsetValueX = ($x + $offsetx) * $c;
+                                $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                                $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                                $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                                $offsetValueY = ($y + $offsety) * $c;
+                                $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                                $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
+                            }
+                            if (empty($NpcPixelX)) {
+                                $NpcPixelX = 0;
+                                $NpcPixelY = 0;
+                            }
+                            $JSON_PositionMarker[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    ),
+                                )
+                            );
                         break;
                         case 6:
                             $x = $Object->Transform->Translation->x;
@@ -646,14 +891,81 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $AssetPath = $Object->Object->strAssetPath;
                             $doorCheckStr = "";
                             $popupInfo = "<center><span class='sptitle'>". $doorCheckStr ."</span></center>". $Name ."<br>". $AssetPath ."";
+                            if (!empty($x)) {
+                                $scale = $mapCsv->at($mapLink)['SizeFactor'];
+                                $c = $scale / 100.0;
+                                $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                                $offsetValueX = ($x + $offsetx) * $c;
+                                $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                                $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                                $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                                $offsetValueY = ($y + $offsety) * $c;
+                                $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                                $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
+                            }
+                            if (empty($NpcPixelX)) {
+                                $NpcPixelX = 0;
+                                $NpcPixelY = 0;
+                            }
+                            $JSON_Gimmick[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'AssetPath' => $AssetPath,
+                                'DoorState' => $doorCheck,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    ),
+                                )
+                            );
                         break;
                         case 7:
                             $x = $Object->Transform->Translation->x;
                             $y = $Object->Transform->Translation->z;
                             $AssetSort = "Sound";
                             $lgbIcon = "060979";
+                            $lgbScale = $Object->Transform->Scale->y;
+                            $c = $scale / 100.0;
+                            $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                            $offsetValueX = ($x + $offsetx) * $c;
+                            $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                            $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                            $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                            $offsetValueY = ($y + $offsety) * $c;
+                            $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                            $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
+                            //data
                             $AssetPath = $Object->Object->strAssetPath;
-                            $popupInfo = "<center><span class='sptitle'>". $Name ."</span></center><br>". $AssetPath ."";
+                            $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $lgbScale ."}).bindPopup(\"<center><span class='sptitle'>". $Name ."</span></center><br>Path: ". $AssetPath ."<br>". $InstanceID ."\").openPopup().addTo(". $AssetSort .")";
+                            $polygonCheck = true;
+                            //$popupInfo = "<center><span class='sptitle'>". $Name ."</span></center><br>". $AssetPath ."";
+                            $JSON_Sound[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'AssetPath' => $AssetPath,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Scale' => $lgbScale,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    )
+                                )
+                            );
                         break;
                         case 8:
                             $BaseId = "". $Object->Object->ParentData->ParentData->BaseId ."";
@@ -676,26 +988,44 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $NPCQuests = "";
                             $coords = "";
                             $NPCDialogue = "";
-                            //if (file_exists("https://garlandtools.org/db/doc/npc/en/2/". $BaseId .".json")) {
-                            //    $npcurl = "https://garlandtools.org/db/doc/npc/en/2/". $BaseId .".json";
-                            //    $npcjdata = file_get_contents($npcurl);
-                            //    $npcdecodeJdata = json_decode($npcjdata);
-                            //    $coords = "";
-                            //    if (!empty($npcdecodeJdata->npc->coords)) {
-                            //        $x = round($npcdecodeJdata->npc->coords[0], 1);
-                            //        $y = round($npcdecodeJdata->npc->coords[1], 1);
-                            //        $coords = "<br>". $x ."-". $y ."";
-                            //    }
-                            //    $NPCDialogue = "";
-                            //    if (!empty($npcdecodeJdata->npc->talk)) {
-                            //        $NPCDialogue = ("<br>". $npcdecodeJdata->npc->talk[0]);
-                            //    }
-                            //    $NPCQuests = "";
-                            //    if (!empty($npcdecodeJdata->npc->quests)) {
-                            //        $NPCQuests = "<br>". $QuestCsv->at($npcdecodeJdata->npc->quests[0])['Name'];
-                            //    }
-                            //}
                             $popupInfo = "<center><span class='sptitle'>". $npcName ."</span><br>". $Gender ."/". $Tribe ."/". $Race ."</center><br>ID: ". $BaseId ."". $coords ."". $NPCDialogue ."". $NPCQuests ."";
+                            
+                            if (!empty($x)) {
+                                $scale = $mapCsv->at($mapLink)['SizeFactor'];
+                                $c = $scale / 100.0;
+                                $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                                $offsetValueX = ($x + $offsetx) * $c;
+                                $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                                $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                                $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                                $offsetValueY = ($y + $offsety) * $c;
+                                $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                                $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
+                            }
+                            if (empty($NpcPixelX)) {
+                                $NpcPixelX = 0;
+                                $NpcPixelY = 0;
+                            }
+                            $JSON_EventNPC[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'EnpcBase' => $BaseId,
+                                'EnpcName' => $npcName,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    ),
+                                )
+                            );
+                            
                         break;
                         case 12:
                             $x = $Object->Transform->Translation->x;
@@ -707,14 +1037,88 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             if ($aetheryteCsv->at($AssetPath)['PlaceName'] == 0) {
                                 $AetheryteLink = $placeNameCsv->at($aetheryteCsv->at($AssetPath)['AethernetName'])['Name'];
                             }
+                            if (!empty($x)) {
+                                $scale = $mapCsv->at($mapLink)['SizeFactor'];
+                                $c = $scale / 100.0;
+                                $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                                $offsetValueX = ($x + $offsetx) * $c;
+                                $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                                $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                                $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                                $offsetValueY = ($y + $offsety) * $c;
+                                $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                                $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
+                            }
+                            if (empty($NpcPixelX)) {
+                                $NpcPixelX = 0;
+                                $NpcPixelY = 0;
+                            }
+                            $JSON_Aetheryte[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'BaseId' => $BaseId,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    ),
+                                )
+                            );
                             $popupInfo = "<center><span class='sptitle'>". $AetheryteLink ."</span><br>". $Name ."</center>";
                         break;
                         case 13:
                             $x = $Object->Transform->Translation->x;
                             $y = $Object->Transform->Translation->z;
                             $AssetSort = "EnvSpace";
+                            $EnvSpaceScale = $Object->Transform->Scale->y;
+                            $c = $scale / 100.0;
+                            $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                            $offsetValueX = ($x + $offsetx) * $c;
+                            $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                            $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                            $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                            $offsetValueY = ($y + $offsety) * $c;
+                            $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                            $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
+                            //data
+                            $EffectiveRange = $Object->Object->EffectiveRange;
+                            $InterpolationTime = $Object->Object->InterpolationTime;
+                            $Reverb = $Object->Object->Reverb;
+                            $Filter = $Object->Object->Filter;
+                            $strSoundAssetPath = $Object->Object->strSoundAssetPath;
                             $lgbIcon = "060711";
-                            $popupInfo = "<center><span class='sptitle'>". $Name ."</span></center><br>". $url ."<br>". $InstanceID ."";
+                            $JSON_EnvSpace[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'EffectiveRange' => $EffectiveRange,
+                                'InterpolationTime' => $InterpolationTime,
+                                'Reverb' => $Reverb,
+                                'Filter' => $Filter,
+                                'SoundAssetPath' => $strSoundAssetPath,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Scale' => $EnvSpaceScale,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    ),
+                                )
+                            );
+                            $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $EnvSpaceScale ."}).bindPopup(\"<center><span class='sptitle'>". $Name ."</span></center><br>EffectiveRange: ". $EffectiveRange ."<br>InterpolationTime: ". $InterpolationTime ."<br>Reverb: ". $Reverb ."<br>Filter: ". $Filter ."<br>SoundAssetPath: ". $strSoundAssetPath ."<br>". $InstanceID ."\").openPopup().addTo(". $AssetSort .")";
+                            $polygonCheck = true;
                         break;
                         case 40:
                             $x = $Object->Transform->Translation->x;
@@ -735,6 +1139,25 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $relativePosCount = $Object->Object->_RelativePositions->PosCount;
                             $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $scaleX ."}).bindPopup(\"<center><span class='sptitle'>". $Name ."</span></center><br>". $relativePosCount ." Sub Positions<br>\").openPopup().addTo(". $AssetSort .")";
                             $polygonCheck = true;
+                            $JSON_PopRange[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'relativePosCount' => $relativePosCount,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Scale' => $scaleX,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    ),
+                                )
+                            );
                         break;
                         case 41:
                             $x = $Object->Transform->Translation->x;
@@ -758,6 +1181,27 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $ReturnInstanceID = $Object->Object->ReturnInstanceID;
                             $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $scaleX ."}).bindPopup(\"<center><span class='sptitle'>". $Name ."</span></center><br>". $TerritoryTypeExitRangeRaw ." (". $TerritoryTypeExitRangeZone .")<br>Destination ID = ". $DestInstanceID ."<br>Return ID = ". $ReturnInstanceID ."\").openPopup().addTo(". $AssetSort .")";
                             $polygonCheck = true;
+                            $JSON_exitrange[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'TerritoryType' => $TerritoryTypeExitRangeZone,
+                                'DestInstanceID' => $DestInstanceID,
+                                'ReturnInstanceID' => $ReturnInstanceID,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Scale' => $scaleX,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    ),
+                                )
+                            );
                         break;
                         case 43:
                             if ($Object->Object->PlaceNameEnabled == 0) continue;
@@ -765,6 +1209,16 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $y = $Object->Transform->Translation->z;
                             $AssetSort = "MapRange";
                             $lgbIcon = "000000";
+                            //notes:
+                            //public enum eTriggerBoxShapeLayer
+                            //{
+                            //    TriggerBoxShapeBox = 0x1,
+                            //    TriggerBoxShapeSphere = 0x2,
+                            //    TriggerBoxShapeCylinder = 0x3,
+                            //    TriggerBoxShapeBoard = 0x4,
+                            //    TriggerBoxShapeMesh = 0x5,
+                            //    TriggerBoxShapeBoardBothSides = 0x6,
+                            //}
                             //polygon
                             $c = $scale / 100.0;
                             $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
@@ -777,10 +1231,109 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
                             //polygon
                             $scaleX = ($Object->Transform->Scale->x / $c2);
+                            $TriggerBoxType = $Object->Object->ParentData->TriggerBoxShape;
                             $PlaceName = $placeNameCsv->at($Object->Object->PlaceNameBlock)['Name'];
                             $PlaceNameSpot = $placeNameCsv->at($Object->Object->PlaceNameSpot)['Name'];
-                            $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $scaleX ."}).bindPopup(\"<center><span class='sptitle'>". $PlaceName ."</span><br>". $PlaceNameSpot ."</center>\").openPopup().addTo(". $AssetSort .")";
+                            //var_dump($TriggerBoxType);
+                            switch ($TriggerBoxType) {
+                                case 1://box
+                                    
+                                    $xscale = ($Object->Transform->Scale->x * 2);
+                                    $yscale = ($Object->Transform->Scale->z * 2);
+                                    $r = $Object->Transform->Rotation->y;
+                                    $pos1x = $NpcPixelX - $xscale;
+                                    $pos1y = $NpcPixelY - $yscale;
+                                    $pos2x = $NpcPixelX + $xscale;
+                                    $pos2y = $NpcPixelY - $yscale;
+                                    $pos3x = $NpcPixelX + $xscale;
+                                    $pos3y = $NpcPixelY + $yscale;
+                                    $pos4x = $NpcPixelX - $xscale;
+                                    $pos4y = $NpcPixelY + $yscale;
+                                    $qx1 = $NpcPixelX + cos(-$r) * ($pos1x - $NpcPixelX) - sin(-$r) * ($pos1y - $NpcPixelY);
+                                    $qy1 = $NpcPixelY + sin(-$r) * ($pos1x - $NpcPixelX) + cos(-$r) * ($pos1y - $NpcPixelY);
+                                    $qx2 = $NpcPixelX + cos(-$r) * ($pos2x - $NpcPixelX) - sin(-$r) * ($pos2y - $NpcPixelY);
+                                    $qy2 = $NpcPixelY + sin(-$r) * ($pos2x - $NpcPixelX) + cos(-$r) * ($pos2y - $NpcPixelY);
+                                    $qx3 = $NpcPixelX + cos(-$r) * ($pos3x - $NpcPixelX) - sin(-$r) * ($pos3y - $NpcPixelY);
+                                    $qy3 = $NpcPixelY + sin(-$r) * ($pos3x - $NpcPixelX) + cos(-$r) * ($pos3y - $NpcPixelY);
+                                    $qx4 = $NpcPixelX + cos(-$r) * ($pos4x - $NpcPixelX) - sin(-$r) * ($pos4y - $NpcPixelY);
+                                    $qy4 = $NpcPixelY + sin(-$r) * ($pos4x - $NpcPixelX) + cos(-$r) * ($pos4y - $NpcPixelY);
+                                    $polylinebox = "var ". $AssetSort ."poly". $InstanceID ."Line = [map.unproject([". $qx1 .", ". $qy1 ."], map.getMaxZoom()),map.unproject([". $qx2 .", ". $qy2 ."], map.getMaxZoom()),map.unproject([". $qx3 .", ". $qy3 ."], map.getMaxZoom()),map.unproject([". $qx4 .", ". $qy4 ."], map.getMaxZoom()),];";
+
+                                    $polygonData = "". $polylinebox ."\nvar ". $AssetSort ."poly". $InstanceID ." = new L.polygon(". $AssetSort ."poly". $InstanceID ."Line).bindPopup(\"<center><span class='sptitle'>". $PlaceName ."</span><br>". $PlaceNameSpot ."<br>". $InstanceID ."</center>\").openPopup().addTo(". $AssetSort .")";
+
+                                    //$polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $scaleX ."}).bindPopup(\"<center><span class='sptitle'>". $PlaceName ."</span><br>". $PlaceNameSpot ."<br>". $InstanceID ."</center>\").openPopup().addTo(". $AssetSort .")";
+                                    $MapRangeSubArray = array(
+                                        'Rotation' => $r,
+                                        '1' => array(
+                                            'X' => $qx1 / 2,
+                                            'Y' => $qy1 / 2,
+                                        ),
+                                        '2' => array(
+                                            'X' => $qx2 / 2,
+                                            'Y' => $qy2 / 2,
+                                        ), 
+                                        '3' => array(
+                                            'X' => $qx3 / 2,
+                                            'Y' => $qy3 / 2,
+                                        ), 
+                                        '4' => array(
+                                            'X' => $qx4 / 2,
+                                            'Y' => $qy4 / 2,
+                                        ),                                         
+                                    );
+
+                                break;
+                                case 2:
+                                    $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $scaleX ."}).bindPopup(\"<center><span class='sptitle'>". $PlaceName ."</span><br>". $PlaceNameSpot ."<br>". $InstanceID ."</center>\").openPopup().addTo(". $AssetSort .")";
+                                    $MapRangeSubArray = array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    );
+                                break;
+                                case 3:
+                                    $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $scaleX ."}).bindPopup(\"<center><span class='sptitle'>". $PlaceName ."</span><br>". $PlaceNameSpot ."<br>". $InstanceID ."</center>\").openPopup().addTo(". $AssetSort .")";$MapRangeSubArray = array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    );
+                                break;
+                                case 4:
+                                    $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {color: \"#e100ff\", radius: ". $scaleX ."}).bindPopup(\"<center><span class='sptitle'>". $PlaceName ."</span><br>". $PlaceNameSpot ."<br>". $InstanceID ."</center>\").openPopup().addTo(". $AssetSort .")";$MapRangeSubArray = array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    );
+                                break;
+                                case 5:
+                                    $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {color: \"#e100ff\", radius: ". $scaleX ."}).bindPopup(\"<center><span class='sptitle'>". $PlaceName ."</span><br>". $PlaceNameSpot ."<br>". $InstanceID ."</center>\").openPopup().addTo(". $AssetSort .")";$MapRangeSubArray = array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    );
+                                break;
+                                case 6:
+                                    $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {color: \"#e100ff\", radius: ". $scaleX ."}).bindPopup(\"<center><span class='sptitle'>". $PlaceName ."</span><br>". $PlaceNameSpot ."<br>". $InstanceID ."</center>\").openPopup().addTo(". $AssetSort .")";$MapRangeSubArray = array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    );
+                                break;
+                            }
                             $polygonCheck = true;
+                            $JSON_MapRange[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'TriggerBoxType' => $TriggerBoxType,
+                                'PlaceName' => $Object->Object->PlaceNameBlock,
+                                'PlaceNameSpot' => $Object->Object->PlaceNameSpot,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Scale' => $scaleX,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => $MapRangeSubArray,
+                                )
+                            );
                         break;
                         case 45:
                             $BaseId = "". $Object->Object->ParentData->BaseId ."";
@@ -789,32 +1342,85 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $y = $Object->Transform->Translation->z;
                             $AssetSort = "EventObject";
                             $lgbIcon = "060416";
-                            $EobjName = $EObjNameCsv->at($BaseId)['Singular'];
+                            $extradebuginfo = "";
+                            $EobjName = ucwords($EObjNameCsv->at($BaseId)['Singular']);
+                            if (strpos($Name, 'LVD_DE') !== false) {
+                                if (empty($DynamicFateArray[$InstanceID]["id"])) continue;
+                                $AssetSort = "fate";
+                                $FateID = $DynamicFateArray[$InstanceID]["id"];
+                                $lgbIcon = $DynamicEventTypeCsv->at($DynamicEventCsv->at($FateID)["EventType"])['Icon{Objective}[0]'];
+                                $fateName = addslashes($DynamicEventCsv->at($FateID)['Name']);
+                                $QuestDynamic = $QuestCsv->at($DynamicEventCsv->at($FateID)['Quest'])['Name'];
+                                $EnemyType = $DynamicEventEnemyTypeCsv->at($DynamicEventCsv->at($FateID)['EnemyType'])['Name'];
+                                $description = str_replace("'","",str_replace(array("\r", "\n", "\t", "\0", "\x0b"), '<br>', $DynamicEventCsv->at($FateID)['Description']));
+                                //polygon
+                                $c = $scale / 100.0;
+                                $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                                $offsetValueX = ($x + $offsetx) * $c;
+                                $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                                $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                                $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                                $offsetValueY = ($y + $offsety) * $c;
+                                $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                                $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
+                                $polygonData = "var fatemarker". $FateID ." = L.icon({className: 'leaflet-div-icon2', iconUrl: '../assets/icons/060000/0". $lgbIcon .".png', iconAnchor: [16,16], iconSize: [32,32], });\nvar fatemarkerpoly". $FateID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $scaleX .", color: \"#6d98c9\", dashArray: \"5 5\", fillOpacity: 0.5}).addTo(fate).addTo(FATE_". $FateID ."Layer)\nvar fate". $FateID ." = L.marker(map.unproject([". (round($NpcPixelX, 1)) .", ". (round($NpcPixelY, 1)) ."], map.getMaxZoom()), {icon: fatemarker". $FateID ."}).bindPopup(\"<center><span class='sptitle'>". $fateName ."</span></center><br>X: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")<br>Enemy Type: ". $EnemyType ."<br>Quest: ". $QuestDynamic ."<br>". $description ."<br>DynamicFateID: <b>". $FateID ."</b>\").openPopup().addTo(fate).addTo(FATE_". $FateID ."Layer);\n";
+                                
+                                $FATELayerString[] = "{label: '<img src=../assets/icons/060000/0". $lgbIcon .".png width=18/>". $fateName ."', layer: FATE_". $FateID ."Layer},";
+                                $FATELayerVar[] = "var FATE_". $FateID ."Layer = L.layerGroup();";
+                                $polygonCheck = true;
+                            }
                             $EobjDataRaw = $EObjCsv->at($BaseId)['Data'];
                             if ($EobjDataRaw == 0) {
                                 $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                $JSONEobjData = array(
+                                    'ExportedSG' => $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'],
+                                );
                             }
                             if ($EobjDataRaw > 65000 && $EobjDataRaw < 131000) {
                                 $questName = addslashes(preg_replace('/[^\x00-\x7F]+/', '', $QuestCsv->at($EobjDataRaw)['Name']));
                                 $EobjData = "Used in Quest = <a href=\\\"https://ffxiv.gamerescape.com/wiki/". $questName ."\\\">". $questName ."</a><br>";
+                                $JSONEobjData = array(
+                                    'QuestID' => $EobjDataRaw,
+                                    'QuestName' => $questName,
+                                );
                             }
                             if ($EobjDataRaw > 131000 && $EobjDataRaw < 590000) {
-                                $EobjData = "Warp = ". $WarpCsv->at($EobjDataRaw)['Question'] ."";
+                                $EobjData = "Warp = ". addslashes($WarpCsv->at($EobjDataRaw)['Question']) ."";
+                                $JSONEobjData = array(
+                                    'WarpID' => $EobjDataRaw,
+                                    'WarpName' => $WarpCsv->at($EobjDataRaw)['Name'],
+                                    'WarpQuestion' => $WarpCsv->at($EobjDataRaw)['Question'],
+                                );
                             }
                             if ($EobjDataRaw > 590000 && $EobjDataRaw < 720000) {
                                 $EobjData = "Default Talk = ". $EobjDataRaw ."<br>";
+                                $JSONEobjData = array(
+                                    'DefaultTalk' => $EobjDataRaw,
+                                );
                             }
                             if ($EobjDataRaw > 721000 && $EobjDataRaw < 983000) {
                                 $EobjData = "Custom Talk = ". $EobjDataRaw ."<br>";
+                                $JSONEobjData = array(
+                                    'CustomTalk' => $EobjDataRaw,
+                                );
                             }
                             if ($EobjDataRaw > 983000 && $EobjDataRaw < 1048000) {
                                 $EobjData = "VFX = ". $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'] ."<br>";
+                                $JSONEobjData = array(
+                                    'VFX' => $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'],
+                                );
                             }
                             if ($EobjDataRaw > 1048000 && $EobjDataRaw < 1703000) {
                                 $EobjData = "Data = ". $EobjDataRaw ."<br>";
+                                $JSONEobjData = array(
+                                    'Data' => $EobjDataRaw,
+                                );
                             }
                             if ($EobjDataRaw > 1703000 && $EobjDataRaw < 2162700) {
                                 $EobjData = "Sound Effect = ". $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'] ."<br>";
+                                $JSONEobjData = array(
+                                    'SoundEffect' => $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'],
+                                );
                             }
                             //adventure
                             if ($EobjDataRaw > 2162700 && $EobjDataRaw < 2359200) {
@@ -826,39 +1432,111 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                                 $EobjData = "<center><span class='sptitle'>Vista<br>". $currentName ."</span></center>". $currentInfo ."<br>". $currentDescription ."<br>Min Level : ". $minLevel ."<br> Use Emote : ". $emote ."";
                                 $AssetSort = "vista";
                                 $lgbIcon = "060429";
+                                $JSONEobjData = array(
+                                    'VistaID' => $EobjDataRaw,
+                                    'Name' => $currentName,
+                                    'Emote' => $emote,
+                                    'MinLevel' => $minLevel,
+                                    'Impression' => $AdevntureCsv->at($EObjCsv->at($BaseId)['Data'])['Impression'],
+                                    'Description' => $AdevntureCsv->at($EObjCsv->at($BaseId)['Data'])['Description'],
+                                );
                             }
                             //arcade machine
                             if ($EobjDataRaw > 2359200 && $EobjDataRaw < 2818050) {
                                 $EobjData = "Aracde Machine";
                                 $AssetSort = "EventObject";
                                 $lgbIcon = "060416";
+                                $JSONEobjData = array(
+                                    'Aracde Machine' => $EobjDataRaw,
+                                );
                             }
-                            //Aether Current
-                            if ($EobjDataRaw > 2818050) {
-                                $CurrentQuest = $AdevntureCsv->at($EObjCsv->at($BaseId)['Data'])['Quest'];
-                                $questName = addslashes(preg_replace('/[^\x00-\x7F]+/', '', $QuestCsv->at($CurrentQuest)['Name']));
-                                $EobjData = "";
-                                if ($CurrentQuest !== 0){
-                                    $EobjData = "Requires Quest = <a href=\\\"https://ffxiv.gamerescape.com/wiki/". $questName ."\\\">". $questName ."</a><br>";
-                                }
-                                $AssetSort = "current";
-                                $lgbIcon = "060653";
+                            $popupdebuginfo = "<br><i title=' Layer ID: ". $InstanceID ."\\n Layer Name: ". $Name ."\\n EobjDataRaw: ". $EobjDataRaw ."\\n Object: ". $BaseId ."\\n SgbPath: ". $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'] ."\\n PopType: ". $EObjCsv->at($BaseId)['PopType'] ."\\n InvisibleType: ". $EObjCsv->at($BaseId)['Invisibility'] ."\\n EventHighAddition: ". $EObjCsv->at($BaseId)['EventHighAddition'] ."\\n Director Control?: ". $EObjCsv->at($BaseId)['DirectorControl'] ."\\n Targetable?: ". $EObjCsv->at($BaseId)['Target'] ."\\n Source: LGB". $extradebuginfo ."'><i>i</i></title>";
+                            $popupInfo = "<center><span class='sptitle'>". $EobjName ."</span></center><br>". $EobjData ."". $popupdebuginfo ."";
+                            
+                            if (!empty($x)) {
+                                $scale = $mapCsv->at($mapLink)['SizeFactor'];
+                                $c = $scale / 100.0;
+                                $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                                $offsetValueX = ($x + $offsetx) * $c;
+                                $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                                $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                                $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                                $offsetValueY = ($y + $offsety) * $c;
+                                $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                                $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
                             }
-                            $popupInfo = "<center><span class='sptitle'>". $EobjName ."</span></center><br> ". $EobjData ."";
+                            if (empty($NpcPixelX)) {
+                                $NpcPixelX = 0;
+                                $NpcPixelY = 0;
+                            }
+                            $JSON_EventObject[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'EobjId' => $BaseId,
+                                'EobjName' => $EobjName,
+                                'EobjData' => $JSONEobjData,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    ),
+                                )
+                            );
                         break;
                         case 47:
                             $x = $Object->Transform->Translation->x;
                             $y = $Object->Transform->Translation->z;
                             $AssetSort = "EnvLocation";
                             $lgbIcon = "000000";
-                            $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
                             $scaleX = ($Object->Transform->Scale->x / $c2);
+                            if (!empty($x)) {
+                                $scale = $mapCsv->at($mapLink)['SizeFactor'];
+                                $c = $scale / 100.0;
+                                $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                                $offsetValueX = ($x + $offsetx) * $c;
+                                $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                                $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                                $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                                $offsetValueY = ($y + $offsety) * $c;
+                                $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                                $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
+                            }
+                            if (empty($NpcPixelX)) {
+                                $NpcPixelX = 0;
+                                $NpcPixelY = 0;
+                            }
+                            $JSON_EnvLocation[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Scale' => $scaleX,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    ),
+                                )
+                            );
                             $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $scaleX ."}).bindPopup(\"<center><span class='sptitle'></span><br></center>\").openPopup().addTo(". $AssetSort .")";
                             //polygon
                             $polygonCheck = true;
                         break;
                         case 49:
                         // this contains FATES!
+                                //var_dump("this is a fate");
                             $x = $Object->Transform->Translation->x;
                             $y = $Object->Transform->Translation->z;
                             $AssetSort = "EventRange";
@@ -875,7 +1553,7 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
                             //polygon
                             $scaleX = ($Object->Transform->Scale->x / $c2);
-                            $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $scaleX ."}).bindPopup(\"<center><span class='sptitle'></span><br></center>\").openPopup().addTo(". $AssetSort .")";
+                            $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $scaleX ."}).bindPopup(\"<center><span class='sptitle'>".$InstanceID ."</span><br></center>\").openPopup().addTo(". $AssetSort .")";
                             if (strpos($Name, 'FATE') !== false) {
                                 if (empty($FateArray[$InstanceID]["id"])) continue;
                                 $AssetSort = "fate";
@@ -896,24 +1574,169 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                                 $offsetValueY = ($y + $offsety) * $c;
                                 $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
                                 $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
-                                $polygonData = "var fatemarker". $FateID ." = L.icon({className: 'leaflet-div-icon2', iconUrl: '../assets/icons/060000/0". $lgbIcon .".png', iconAnchor: [16,16], iconSize: [32,32], });\nvar fatemarkerpoly". $FateID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $scaleX .", color: \"#6d98c9\", dashArray: \"5 5\", fillOpacity: 0.5}).addTo(fate)\nvar fate". $FateID ." = L.marker(map.unproject([". (round($NpcPixelX, 1)) .", ". (round($NpcPixelY, 1)) ."], map.getMaxZoom()), {icon: fatemarker". $FateID ."}).bindPopup(\"<center><span class='sptitle'>". $fateName ."</span></center><br>X: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")<br>Level: ". $minlev ." - ". $maxlev ."<br>". $objective ."<br>". $description ."<br>FateID: <b>". $FateID ."</b>\").openPopup().addTo(fate);\n";
+                                $polygonData = "var fatemarker". $FateID ." = L.icon({className: 'leaflet-div-icon2', iconUrl: '../assets/icons/060000/0". $lgbIcon .".png', iconAnchor: [16,16], iconSize: [32,32], });\nvar fatemarkerpoly". $FateID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $scaleX .", color: \"#6d98c9\", dashArray: \"5 5\", fillOpacity: 0.5}).addTo(fate).addTo(FATE_". $FateID ."Layer)\nvar fate". $FateID ." = L.marker(map.unproject([". (round($NpcPixelX, 1)) .", ". (round($NpcPixelY, 1)) ."], map.getMaxZoom()), {icon: fatemarker". $FateID ."}).bindPopup(\"<center><span class='sptitle'>". $fateName ."</span></center><br>X: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")<br>Level: ". $minlev ." - ". $maxlev ."<br>". $objective ."<br>". $description ."<br>FateID: <b>". $FateID ."</b>\").openPopup().addTo(fate).addTo(FATE_". $FateID ."Layer);\n";
+                                
+                                $FATELayerString[] = "{label: '<img src=../assets/icons/060000/0". $lgbIcon .".png width=18/>". $fateName ."', layer: FATE_". $FateID ."Layer},";
+                                $FATELayerVar[] = "var FATE_". $FateID ."Layer = L.layerGroup();";
+                                
+                                $JSON_Fate[] = array(
+                                    'LGB_ID' => $InstanceID,
+                                    'AssetType' => $AssetType,
+                                    'Name' => $Name,
+                                    'FATEID' => $FateID,
+                                    'Transform' => array(  
+                                        'X' => $x,
+                                        'Y' => $y,
+                                        'Scale' => $scaleX,
+                                        'Coords' => array(
+                                            'X' => $NpcLocX,
+                                            'Y' => $NpcLocY,
+                                        ),
+                                        'Pixel' => array(
+                                            'X' => $NpcPixelX / 2,
+                                            'Y' => $NpcPixelY / 2,
+                                        ),
+                                    )
+                                );
                             }
                             //polygon
                             $polygonCheck = true;
+                            $JSON_EventRange[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Scale' => $scaleX,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    ),
+                                )
+                            );
                         break;
                         case 57:
                             $x = $Object->Transform->Translation->x;
                             $y = $Object->Transform->Translation->z;
                             $AssetSort = "CollisionBox";
                             $lgbIcon = "060626";
-                            $popupInfo = "<center><span class='sptitle'>Collision Box</span></center><br>". $Name ."";
+                            //polygon
+                            $c = $scale / 100.0;
+                            $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                            $offsetValueX = ($x + $offsetx) * $c;
+                            $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                            $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                            $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                            $offsetValueY = ($y + $offsety) * $c;
+                            $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                            $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
+                            $xscale = ($Object->Transform->Scale->x * 2);
+                            $yscale = ($Object->Transform->Scale->z * 2);
+                            $r = $Object->Transform->Rotation->y;
+                            $pos1x = $NpcPixelX - $xscale;
+                            $pos1y = $NpcPixelY - $yscale;
+                            $pos2x = $NpcPixelX + $xscale;
+                            $pos2y = $NpcPixelY - $yscale;
+                            $pos3x = $NpcPixelX + $xscale;
+                            $pos3y = $NpcPixelY + $yscale;
+                            $pos4x = $NpcPixelX - $xscale;
+                            $pos4y = $NpcPixelY + $yscale;
+                            $qx1 = $NpcPixelX + cos(-$r) * ($pos1x - $NpcPixelX) - sin(-$r) * ($pos1y - $NpcPixelY);
+                            $qy1 = $NpcPixelY + sin(-$r) * ($pos1x - $NpcPixelX) + cos(-$r) * ($pos1y - $NpcPixelY);
+                            $qx2 = $NpcPixelX + cos(-$r) * ($pos2x - $NpcPixelX) - sin(-$r) * ($pos2y - $NpcPixelY);
+                            $qy2 = $NpcPixelY + sin(-$r) * ($pos2x - $NpcPixelX) + cos(-$r) * ($pos2y - $NpcPixelY);
+                            $qx3 = $NpcPixelX + cos(-$r) * ($pos3x - $NpcPixelX) - sin(-$r) * ($pos3y - $NpcPixelY);
+                            $qy3 = $NpcPixelY + sin(-$r) * ($pos3x - $NpcPixelX) + cos(-$r) * ($pos3y - $NpcPixelY);
+                            $qx4 = $NpcPixelX + cos(-$r) * ($pos4x - $NpcPixelX) - sin(-$r) * ($pos4y - $NpcPixelY);
+                            $qy4 = $NpcPixelY + sin(-$r) * ($pos4x - $NpcPixelX) + cos(-$r) * ($pos4y - $NpcPixelY);
+                            $polylinebox = "var ". $AssetSort ."poly". $InstanceID ."Line = [map.unproject([". $qx1 .", ". $qy1 ."], map.getMaxZoom()),map.unproject([". $qx2 .", ". $qy2 ."], map.getMaxZoom()),map.unproject([". $qx3 .", ". $qy3 ."], map.getMaxZoom()),map.unproject([". $qx4 .", ". $qy4 ."], map.getMaxZoom()),];";
+                            $polygonData = "". $polylinebox ."\nvar ". $AssetSort ."poly". $InstanceID ." = new L.polygon(". $AssetSort ."poly". $InstanceID ."Line, {color: \"#ab1313\", dashArray: \"10 10\"}).bindPopup(\"<center><span class='sptitle'>Collision Box</span><br>". $Name ."<br>". $InstanceID ."</center>\").openPopup().addTo(". $AssetSort .")";
+                            $CollisionBoxSubArray = array(
+                                'Rotation' => $r,
+                                '1' => array(
+                                    'X' => $qx1 / 2,
+                                    'Y' => $qy1 / 2,
+                                ),
+                                '2' => array(
+                                    'X' => $qx2 / 2,
+                                    'Y' => $qy2 / 2,
+                                ), 
+                                '3' => array(
+                                    'X' => $qx3 / 2,
+                                    'Y' => $qy3 / 2,
+                                ), 
+                                '4' => array(
+                                    'X' => $qx4 / 2,
+                                    'Y' => $qy4 / 2,
+                                ),                                         
+                            );
+                            $JSON_CollisionBox[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Scale' => $scaleX,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => $CollisionBoxSubArray,
+                                )
+                            );
+
+                            $polygonCheck = true;
+
+                            //$popupInfo = "<center><span class='sptitle'>Collision Box</span></center><br>". $Name ."<br>". $InstanceID ."";
                         break;
                         case 59:
                             $x = $Object->Transform->Translation->x;
                             $y = $Object->Transform->Translation->z;
                             $AssetSort = "LineVfx";
                             $lgbIcon = "060457";
+                            $MarkerRotation = rad2deg($Object->Transform->Rotation->y);
+                            $RotatedMarkerBool = true;
                             $popupInfo = "<center><span class='sptitle'>". $Name ."</span></center><br>". $InstanceID ."";
+                            if (!empty($x)) {
+                                $scale = $mapCsv->at($mapLink)['SizeFactor'];
+                                $c = $scale / 100.0;
+                                $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                                $offsetValueX = ($x + $offsetx) * $c;
+                                $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                                $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                                $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                                $offsetValueY = ($y + $offsety) * $c;
+                                $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                                $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
+                            }
+                            if (empty($NpcPixelX)) {
+                                $NpcPixelX = 0;
+                                $NpcPixelY = 0;
+                            }
+                            $JSON_LineVfx[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Rotation' => $Object->Transform->Rotation->y,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    ),
+                                )
+                            );
                         break;
                         case 65:
                             $x = $Object->Transform->Translation->x;
@@ -968,6 +1791,11 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
 
                                 $ControlPointsPathString = "map.unproject([". $PointPixelX .", ". $PointPixelY ."], map.getMaxZoom()),";
                                 $ControlPointsPathArray[$PointID] = $ControlPointsPathString;
+                                $JSONControlPointsPathString = array(
+                                    'X' => $PointPixelX / 2,
+                                    'Y' => $PointPixelY / 2,
+                                );
+                                $JSONControlPointsPathArray[$PointID] = $JSONControlPointsPathString;
                                 //array_slice($ControlPointsPathArray, 0, 1);
                                 //var_dump($ControlPointsPathArray);
 
@@ -978,6 +1806,21 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $ControlPointsPathArray = implode($ControlPointsPathArray);
                             $popupInfo = "<center><span class='sptitle'>". $Name ."</span></center><br>Color : <div style= \\\"background: ". $colorarray[$randomColour] ."; display: inline-block; width: 20px;   height: 20px;\\\"></div><br>". $InstanceID ."";
                             $NewLineInfo = "\nvar ". $AssetSort ."". $InstanceID ."path = [". $ControlPointsPathArray."];\nvar ". $AssetSort ."". $InstanceID ."polyline = new L.Polyline(". $AssetSort ."". $InstanceID ."path, {color: '". $colorarray[$randomColour] ."'}).bindPopup(\"". $popupInfo ."\").openPopup().addTo(ClientPath);";
+                            
+                            $JSON_ClientPath[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => $JSONControlPointsPathArray,
+                                )
+                            );
 
                         break;
                         case 68:
@@ -986,6 +1829,39 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $AssetSort = "TargetMarker";
                             $lgbIcon = "060561";
                             $popupInfo = "<center><span class='sptitle'>". $Name ."</span></center>". $InstanceID ."";
+                            if (!empty($x)) {
+                                $scale = $mapCsv->at($mapLink)['SizeFactor'];
+                                $c = $scale / 100.0;
+                                $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                                $offsetValueX = ($x + $offsetx) * $c;
+                                $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                                $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                                $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                                $offsetValueY = ($y + $offsety) * $c;
+                                $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                                $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
+                            }
+                            if (empty($NpcPixelX)) {
+                                $NpcPixelX = 0;
+                                $NpcPixelY = 0;
+                            }
+                            $JSON_TargetMarker[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    ),
+                                )
+                            );
                         break;
                         case 69:
                             $x = $Object->Transform->Translation->x;
@@ -993,6 +1869,39 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $AssetSort = "ChairMarker";
                             $lgbIcon = "060420";
                             $popupInfo = "<center><span class='sptitle'>". $Name ."</span></center>". $InstanceID ."";
+                            if (!empty($x)) {
+                                $scale = $mapCsv->at($mapLink)['SizeFactor'];
+                                $c = $scale / 100.0;
+                                $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                                $offsetValueX = ($x + $offsetx) * $c;
+                                $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                                $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                                $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                                $offsetValueY = ($y + $offsety) * $c;
+                                $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                                $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
+                            }
+                            if (empty($NpcPixelX)) {
+                                $NpcPixelX = 0;
+                                $NpcPixelY = 0;
+                            }
+                            $JSON_ChairMarker[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    ),
+                                )
+                            );
                         break;
                         case 71:
                             $x = $Object->Transform->Translation->x;
@@ -1013,6 +1922,25 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $scaleX = ($Object->Transform->Scale->x / $c2);
                             $polygonCheck = true;
                             $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $scaleX ."}).bindPopup(\"<center><span class='sptitle'>". $Name ."</span><br>". $InstanceID ."</center>\").openPopup().addTo(". $AssetSort .")";
+                            
+                            $JSON_PrefetchRange[] = array(
+                                'LGB_ID' => $InstanceID,
+                                'AssetType' => $AssetType,
+                                'Name' => $Name,
+                                'Transform' => array(  
+                                    'X' => $x,
+                                    'Y' => $y,
+                                    'Scale' => $scaleX,
+                                    'Coords' => array(
+                                        'X' => $NpcLocX,
+                                        'Y' => $NpcLocY,
+                                    ),
+                                    'Pixel' => array(
+                                        'X' => $NpcPixelX / 2,
+                                        'Y' => $NpcPixelY / 2,
+                                    ),
+                                )
+                            );
                         break;
 
                         default:
@@ -1022,30 +1950,22 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $lgbIcon = "060582";
                         break;
                     }
+                    if (empty($NpcPixelX)) {
+                        $NpcPixelX = 0;
+                        $NpcPixelY = 0;
+                    }
                     //needs work to make a polygon instead of marker?
                     $IconScale = "iconAnchor: [". $anchory .",". $anchorx ."], iconSize: [". $scaley .",". $scalex ."]";
                     $NpcName = $EnpcResidentCsv->at($BaseId)['Singular'];
 
                     //conv
-                    if (!empty($x)) {
-                        $scale = $mapCsv->at($mapLink)['SizeFactor'];
-                        $c = $scale / 100.0;
-                        $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
-                        $offsetValueX = ($x + $offsetx) * $c;
-                        $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
-                        $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
-                        $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
-                        $offsetValueY = ($y + $offsety) * $c;
-                        $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
-                        $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
-                    }
-                    if (empty($NpcPixelX)) {
-                        $NpcPixelX = 0;
-                        $NpcPixelY = 0;
+                    if ($RotatedMarkerBool == true) {
+                        $MarkerRotationInput = ", rotationAngle: ". $MarkerRotation .", rotationOrigin: 'center'";
+                    } elseif ($RotatedMarkerBool == false) {
+                        $MarkerRotationInput = "";
                     }
                     if ($polygonCheck == false) {
-                        $jsonString = "\nvar ". $AssetSort ."icon". $InstanceID ." = L.icon({className: 'leaflet-div-icon2', iconUrl: '../assets/icons/060000/". $lgbIcon .".png',iconAnchor: [16, 16], });
-var ". $AssetSort ."raw". $InstanceID ." = L.marker(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {icon: ". $AssetSort ."icon". $InstanceID ."}).bindPopup(\"". $popupInfo ."\").openPopup().addTo(". $AssetSort .")". $NewLineInfo ."";
+                        $jsonString = "\nvar ". $AssetSort ."icon". $InstanceID ." = L.icon({className: 'leaflet-div-icon2', iconUrl: '../assets/icons/060000/". $lgbIcon .".png',iconAnchor: [16, 16], });\nvar ". $AssetSort ."raw". $InstanceID ." = L.marker(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {icon: ". $AssetSort ."icon". $InstanceID ."". $MarkerRotationInput ."}).bindPopup(\"". $popupInfo ."\").openPopup().addTo(". $AssetSort .")". $NewLineInfo ."";
                     } elseif ($polygonCheck == true) {
                         $jsonString = "\n". $polygonData ."";
                     }
@@ -1053,6 +1973,10 @@ var ". $AssetSort ."raw". $InstanceID ." = L.marker(map.unproject([". $NpcPixelX
                 }
             }
         }
+        sort($FATELayerString);
+        $FateLayerArray = implode("\n", array_unique($FATELayerString));
+        sort($FATELayerVar);
+        $FATELayerArrayVar = implode("\n", array_unique($FATELayerVar));
 
         $jsonOutput = implode($jsonOutput);
         //level.exd loading
@@ -1108,10 +2032,33 @@ var ". $AssetSort ."raw". $InstanceID ." = L.marker(map.unproject([". $NpcPixelX
                 case 5:
                     $AssetSort = "PositionMarker";
                     $lgbIcon = "060408";
-                    $PosMarkerQuestId = $lgbID[$levelID]["id"];
+                    if (!empty($lgbID[$levelID]["id"])) {
+                        $PosMarkerQuestId = $lgbID[$levelID]["id"];
+                    } else {
+                        $PosMarkerQuestId = 65536;
+                    }
                     $questName = addslashes(preg_replace('/[^\x00-\x7F]+/', '', $QuestCsv->at($PosMarkerQuestId)['Name']));
                     $QuestTextData = "Quest = <a href=\\\"https://ffxiv.gamerescape.com/wiki/". $questName ."\\\">". $questName ."</a><br>";
                     $popupInfo = "<center><span class='sptitle'>Position Marker</span></center><br>". $QuestTextData ."<br>". $levelID ."";
+                    $JSON_PositionMarker[] = array(
+                        'LGB_ID' => $levelID,
+                        'AssetType' => $AssetType,
+                        'Name' => "",
+                        'AssetObject' => $assetObject,
+                        'EventID' => $EventId,
+                        'Transform' => array(  
+                            'X' => $x,
+                            'Y' => $y,
+                            'Coords' => array(
+                                'X' => $NpcLocX,
+                                'Y' => $NpcLocY,
+                            ),
+                            'Pixel' => array(
+                                'X' => $NpcPixelX / 2,
+                                'Y' => $NpcPixelY / 2,
+                            ),
+                        )
+                    );
                 break;
                 case 6:
                     $AssetSort = "Gimmick";
@@ -1139,6 +2086,27 @@ var ". $AssetSort ."raw". $InstanceID ." = L.marker(map.unproject([". $NpcPixelX
                     $NPCQuests = "";
                     $coords = "";
                     $NPCDialogue = "";
+                    $JSON_EventNPC[] = array(
+                        'LGB_ID' => $levelID,
+                        'AssetType' => $AssetType,
+                        'Name' => "",
+                        'AssetObject' => $assetObject,
+                        'EventID' => $EventId,
+                        'EnpcBase' => $assetObject,
+                        'EnpcName' => $npcName,
+                        'Transform' => array(  
+                            'X' => $x,
+                            'Y' => $y,
+                            'Coords' => array(
+                                'X' => $NpcLocX,
+                                'Y' => $NpcLocY,
+                            ),
+                            'Pixel' => array(
+                                'X' => $NpcPixelX / 2,
+                                'Y' => $NpcPixelY / 2,
+                            ),
+                        )
+                    );
                     //if (file_exists("https://garlandtools.org/db/doc/npc/en/2/". $assetObject .".json")) {
                     //    $npcurl = "https://garlandtools.org/db/doc/npc/en/2/". $assetObject .".json";
                     //    $npcjdata = file_get_contents($npcurl);
@@ -1172,7 +2140,7 @@ var ". $AssetSort ."raw". $InstanceID ." = L.marker(map.unproject([". $NpcPixelX
                             $ArrayEventHandlerData = "Quest = <a href=\\\"https://ffxiv.gamerescape.com/wiki/". $questName ."\\\">". $questName ."</a><br>";
                         }
                         if ($handlerData > 131000 && $handlerData < 262000) {
-                            $ArrayEventHandlerData = "Warp = ". $WarpCsv->at($handlerData)['Question'] ."<br>";
+                            $ArrayEventHandlerData = "Warp = ". addslashes($WarpCsv->at($handlerData)['Question']) ."<br>";
                         }
                         if ($handlerData > 262000 && $handlerData < 591000) {
                             $ArrayEventHandlerData = "Shop = ". $GilShopCsv->at($handlerData)['Name'] ."<br>";
@@ -1196,6 +2164,7 @@ var ". $AssetSort ."raw". $InstanceID ." = L.marker(map.unproject([". $NpcPixelX
                     }
                     $ArrayEventHandlerOutput = implode($ArrayEventHandlerOutput);
                     $popupInfo = "<center><span class='sptitle'>BATTLE NPC</span></center><br>Involved in:<br> ". $ArrayEventHandlerOutput ."";
+                    
                 break;
                 case 12:
                     $AssetSort = "Aetheryte";
@@ -1205,33 +2174,75 @@ var ". $AssetSort ."raw". $InstanceID ." = L.marker(map.unproject([". $NpcPixelX
                     $AssetSort = "EnvSpace";
                     $lgbIcon = "060711";
                 break;
-                //case 40:
-                //    $AssetSort = "PopRange";
-                //    $lgbIcon = "000000";
-                //    //polygon
-                //    $c = $scale / 100.0;
-                //    $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
-                //    $offsetValueX = ($x + $offsetx) * $c;
-                //    $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
-                //    $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
-                //    $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
-                //    $offsetValueY = ($y + $offsety) * $c;
-                //    $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
-                //    $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
-                //    $c2 = ($scale / 100.0) * 2;
-                //    $scaleX = ($levelData['Radius'] / $c2);
-                //    $poprangeinfo = "<center><span class='sptitle'>PopRange</span><br>". $levelID ."</center>";
-                //    if (!empty($TreasureSpot[$levelID]["id"])) {
-                //        $AssetSort = "Treasure";
-                //        $floorID = floor($TreasureSpot[$levelID]["id"]);
-                //        $lgbIcon = "0". $TreasureHuntRankCsv->at($floorID)['Icon'] ."";
-                //        $treasureName = $itemCsv->at($TreasureHuntRankCsv->at($floorID)['ItemName'])['Name'];
-                //        $popupInfo =  "<center><span class='sptitle'>". $treasureName ."</span><br></center>(X:". round($NpcLocX, 1) ." Y:". round($NpcLocY, 1) .")";
-                //        $poprangeinfo = "<center><span class='sptitle'>". $treasureName ."</span><br></center>";
-                //    }
-                //    $polygonCheck = false; //set for the different icon types
-                //    $polygonData = "\nvar ". $AssetSort ."poly". $levelID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $scaleX ."}).bindPopup(\"". $poprangeinfo ."\").openPopup().addTo(". $AssetSort .")";
-                //break;
+                case 40:
+                    $AssetSort = "PopRange";
+                    $lgbIcon = "000000";
+                    //polygon
+                    $c = $scale / 100.0;
+                    $offsetx = $mapCsv->at($mapLink)['Offset{X}'];
+                    $offsetValueX = ($x + $offsetx) * $c;
+                    $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                    $NpcPixelX = (($NpcLocX - 1) * 50 * $c *2);
+                    $offsety = $mapCsv->at($mapLink)['Offset{Y}'];
+                    $offsetValueY = ($y + $offsety) * $c;
+                    $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                    $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
+                    $c2 = ($scale / 100.0) * 2;
+                    $scaleX = ($levelData['Radius'] / $c2);
+                    $poprangeinfo = "<center><span class='sptitle'>PopRange</span><br>". $levelID ."</center>";
+                    if (!empty($TreasureSpot[$levelID]["id"])) {
+                        $AssetSort = "Treasure";
+                        $floorID = floor($TreasureSpot[$levelID]["id"]);
+                        $lgbIcon = "0". $TreasureHuntRankCsv->at($floorID)['Icon'] ."";
+                        $treasureName = $itemCsv->at($TreasureHuntRankCsv->at($floorID)['ItemName'])['Name'];
+                        $popupInfo =  "<center><span class='sptitle'>". $treasureName ."</span><br></center>(X:". round($NpcLocX, 1) ." Y:". round($NpcLocY, 1) .")";
+                        $poprangeinfo = "<center><span class='sptitle'>". $treasureName ."</span><br></center>";
+                        $JSON_Treasure[] = array(
+                            'LGB_ID' => $levelID,
+                            'AssetType' => $AssetType,
+                            'Name' => $treasureName,
+                            'AssetObject' => $assetObject,
+                            'EventID' => $EventId,
+                            'TreasureID' => $floorID,
+                            'Transform' => array(  
+                                'X' => $x,
+                                'Y' => $y,
+                                'Scale' => $scaleX,
+                                'Coords' => array(
+                                    'X' => $NpcLocX,
+                                    'Y' => $NpcLocY,
+                                ),
+                                'Pixel' => array(
+                                    'X' => $NpcPixelX / 2,
+                                    'Y' => $NpcPixelY / 2,
+                                ),
+                            )
+                        );
+                    }
+                    $polygonCheck = false; //set for the different icon types
+                    $polygonData = "\nvar ". $AssetSort ."poly". $levelID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $scaleX ."}).bindPopup(\"". $poprangeinfo ."\").openPopup().addTo(". $AssetSort .")";
+                    
+                    $JSON_PopRange[] = array(
+                        'LGB_ID' => $levelID,
+                        'AssetType' => $AssetType,
+                        'Name' => "",
+                        'AssetObject' => $assetObject,
+                        'EventID' => $EventId,
+                        'Transform' => array(  
+                            'X' => $x,
+                            'Y' => $y,
+                            'Scale' => $scaleX,
+                            'Coords' => array(
+                                'X' => $NpcLocX,
+                                'Y' => $NpcLocY,
+                            ),
+                            'Pixel' => array(
+                                'X' => $NpcPixelX / 2,
+                                'Y' => $NpcPixelY / 2,
+                            ),
+                        )
+                    );
+                break;
                 case 41:
                     $AssetSort = "exitrange";
                     $lgbIcon = "060457";
@@ -1246,8 +2257,9 @@ var ". $AssetSort ."raw". $InstanceID ." = L.marker(map.unproject([". $NpcPixelX
                     $AssetSort = "EventObject";
                     $lgbIcon = "060416";
                     $EobjData = "";
-                    $EobjName = $EObjNameCsv->at($assetObject)['Singular'];
+                    $EobjName = ucwords($EObjNameCsv->at($assetObject)['Singular']);
                     $EobjDataRaw = $EObjCsv->at($assetObject)['Data'];
+                    $extradebuginfo = "";
                     if ($EobjDataRaw == 0) {
                         $EobjData = $ExportedSGCsv->at($EObjCsv->at($assetObject)['SgbPath'])['SgbPath'];
                     }
@@ -1256,7 +2268,7 @@ var ". $AssetSort ."raw". $InstanceID ." = L.marker(map.unproject([". $NpcPixelX
                         $EobjData = "Used in Quest = <a href=\\\"https://ffxiv.gamerescape.com/wiki/". $questName ."\\\">". $questName ."</a><br>";
                     }
                     if ($EobjDataRaw > 131000 && $EobjDataRaw < 590000) {
-                        $EobjData = "Warp = ". $WarpCsv->at($EobjDataRaw)['Question'] ."";
+                        $EobjData = "Warp = ". addslashes($WarpCsv->at($EobjDataRaw)['Question']) ."";
                     }
                     if ($EobjDataRaw > 590000 && $EobjDataRaw < 720000) {
                         $EobjData = "Default Talk = ". $EobjDataRaw ."<br>";
@@ -1297,7 +2309,8 @@ var ". $AssetSort ."raw". $InstanceID ." = L.marker(map.unproject([". $NpcPixelX
                         $EobjData = "X: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")";
                         $lgbIcon = "060653";
                     }
-                    $popupInfo = "<center><span class='sptitle'>". $EobjName ."</span></center><br>". $EobjData ."";
+                    $popupdebuginfo = "<br><i title=' Layer ID: ". $levelID ."\\n EobjDataRaw: ". $EobjDataRaw ."\\n Object: ". $assetObject ."\\n SgbPath: ". $ExportedSGCsv->at($EObjCsv->at($assetObject)['SgbPath'])['SgbPath'] ."\\n PopType: ". $EObjCsv->at($assetObject)['PopType'] ."\\n InvisibleType: ". $EObjCsv->at($assetObject)['Invisibility'] ."\\n EventHighAddition: ". $EObjCsv->at($assetObject)['EventHighAddition'] ."\\n Director Control?: ". $EObjCsv->at($assetObject)['DirectorControl'] ."\\n Targetable?: ". $EObjCsv->at($assetObject)['Target'] ."\\n Source: EXD". $extradebuginfo ."'><i>i</i></title>";
+                    $popupInfo = "<center><span class='sptitle'>". $EobjName ."</span></center><br>". $EobjData ."". $popupdebuginfo ."";
                 break;
                 case 47:
                     $AssetSort = "EnvLocation";
@@ -1413,10 +2426,28 @@ var ". $AssetSort ."raw". $levelID ." = L.marker(map.unproject([". $NpcPixelX ."
                     $AssetSort = "Monster";
                     $BnpcLayerID = preg_replace('/[^A-Za-z0-9]/', '', $BNpcNameID);
                     $mappyString = "\nvar ". $Type ."icon". $Hash ." = L.icon({className: 'leaflet-div-icon2', iconUrl: '../assets/icons/060000/060004.png',iconAnchor: [16, 16], });
-var ". $Type ."raw". $Hash ." = L.marker(map.unproject([". $PixelX .", ". $PixelY ."], map.getMaxZoom()), {icon: ". $Type ."icon". $Hash ."}).bindPopup(\"<center><span class='sptitle'>". $BNpcNameID ."</span></center>HP = ". $HP ."<br>(X:". $PosX ." Y:". $PosY .")\").openPopup().addTo(". $BnpcLayerID ."Layer)";
+var ". $Type ."raw". $Hash ." = L.marker(map.unproject([". $PixelX .", ". $PixelY ."], map.getMaxZoom()), {icon: ". $Type ."icon". $Hash ."}).bindPopup(\"<center><span class='sptitle'>". $BNpcNameID ."</span></center>HP = ". $HP ."<br>(X:". $PosX ." Y:". $PosY .")\").openPopup().addTo(BNPC_". $BnpcLayerID ."Layer)";
                     $mappyOutput[] = $mappyString;
-                    $MonsterLayerString[] = "{label: '". addslashes($BNpcNameID) ."', layer: ". $BnpcLayerID ."Layer},";
-                    $MonsterLayerStringVar[] = "var ". $BnpcLayerID ."Layer = L.layerGroup();";
+                    $MonsterLayerString[] = "{label: '". addslashes($BNpcNameID) ."', layer: BNPC_". $BnpcLayerID ."Layer},";
+                    $MonsterLayerStringVar[] = "var BNPC_". $BnpcLayerID ."Layer = L.layerGroup();";
+                    $JSON_BNPC[] = array(
+                        'UniqueHash' => $Hash,
+                        'AssetType' => 9,
+                        'BNpcBase' => $BNpcBaseID,
+                        'BNpcName' => $BNpcNameID,
+                        'FateID' => $FateID,
+                        'HP' => $HP,
+                        'Transform' => array(  
+                            'Coords' => array(
+                                'X' => $PosX,
+                                'Y' => $PosY,
+                            ),
+                            'Pixel' => array(
+                                'X' => $PixelX / 2,
+                                'Y' => $PixelY / 2,
+                            ),
+                        )
+                    );
                 break;
                 case 'Node':
                     $gatheringTimeTable = [];
@@ -1431,6 +2462,7 @@ var ". $Type ."raw". $Hash ." = L.marker(map.unproject([". $PixelX .", ". $Pixel
                         $gpointtype = 'Spearfishing';
                     }
                     $gpointicon = $gatheringtypecsv->at($gpointbase)['Icon{Main}'];
+                    
                     if ($gatheringPointTransientCsv->at($NodeID)['GatheringRarePopTimeTable'] > 0) {
                         $gpointicon = $gatheringtypecsv->at($gpointbase)['Icon{Off}'];
                         foreach (range(0, 2) as $t){
@@ -1446,6 +2478,15 @@ var ". $Type ."raw". $Hash ." = L.marker(map.unproject([". $PixelX .", ". $Pixel
                     $gatheringTimeTable = implode($gatheringTimeTable);
                     $AssetSort = "gathering";
                     $gpointlevel = $gatheringPointBaseCsv->at($gpoint)['GatheringLevel'];
+                    $gpointbonusRaw = $gatheringpointcsv->at($NodeID)['GatheringPointBonus[0]'];
+                    $gpointbonus = "";
+                    if ($gpointbonusRaw != 0) {
+                        $GpointBonusConditionValue = $gatheringPointBonusCsv->at($gpointbonusRaw)['ConditionValue'];
+                        $GpointBonusCondition = str_replace("<Value>IntegerParameter(1)</Value>", $GpointBonusConditionValue, $GatheringConditionCsv->at($gatheringPointBonusCsv->at($gpointbonusRaw)['Condition'])['Text']);
+                        $GpointBonusTypeValue = $gatheringPointBonusCsv->at($gpointbonusRaw)['BonusValue'];
+                        $GpointBonusType = str_replace("<Value>IntegerParameter(1)</Value>", $GpointBonusTypeValue, $GatheringPointBonusTypeCsv->at($gatheringPointBonusCsv->at($gpointbonusRaw)['BonusType'])['Text']);
+                        $gpointbonus = "<br>Location Effect:<br>". $GpointBonusCondition ." <b>→</b> ". $GpointBonusType ."<br>";
+                    }
                     $gpointItem = [];
                     foreach (range(0, 7) as $i) {
                         if ($gatheringPointBaseCsv->at($gpoint)["Item[$i]"] == 0) continue;
@@ -1468,8 +2509,23 @@ var ". $Type ."raw". $Hash ." = L.marker(map.unproject([". $PixelX .", ". $Pixel
                         $gpointItem[] = $gpointItemString;
                     }
                     $gpointItem = implode($gpointItem);
+                    $JSON_Gathering[] = array(
+                        'ID' => $NodeID,
+                        'AssetType' => "",
+                        'BNpcBase' => $BNpcBaseID,
+                        'Transform' => array(  
+                            'Coords' => array(
+                                'X' => $PosX,
+                                'Y' => $PosY,
+                            ),
+                            'Pixel' => array(
+                                'X' => $PixelX / 2,
+                                'Y' => $PixelY / 2,
+                            ),
+                        )
+                    );
                     $mappyString = "\nvar ". $Type ."icon". $Hash ." = L.icon({className: 'leaflet-div-icon2', iconUrl: '../assets/icons/060000/0". $gpointicon .".png',iconAnchor: [16, 16], });
-var ". $Type ."raw". $Hash ." = L.marker(map.unproject([". $PixelX .", ". $PixelY ."], map.getMaxZoom()), {icon: ". $Type ."icon". $Hash ."}).bindPopup(\"<center><span class='sptitle'>". $gpointtype ."<br></span></center>". $gpointItem ."<br>". $gatheringTimeTable ."(X:". $PosX ." Y:". $PosY .")\").openPopup().addTo(". $AssetSort .")";
+var ". $Type ."raw". $Hash ." = L.marker(map.unproject([". $PixelX .", ". $PixelY ."], map.getMaxZoom()), {icon: ". $Type ."icon". $Hash ."}).bindPopup(\"<center><span class='sptitle'>". $gpointtype ."<br></span></center>". $gpointItem ."<br>". $gatheringTimeTable ."<br>Lv. ". $gpointlevel ."". $gpointbonus ."(X:". $PosX ." Y:". $PosY .")\").openPopup().addTo(". $AssetSort .")";
                     $mappyOutput[] = $mappyString;
                 break;
 
@@ -1478,6 +2534,47 @@ var ". $Type ."raw". $Hash ." = L.marker(map.unproject([". $PixelX .", ". $Pixel
                 break;
             }
         }
+        $JSONZoneInfo = array(
+            'ID' => $teriID, 
+            'PlaceName' => "". $Titleplacename ."". $TitleplacenameSub ."",
+            'Code' => $teriName, 
+            'Map' => $JSONMapInfo, 
+            'BGPath' => $bgPath, 
+            'BGM' => $JSONBGMInfo, 
+            'ExclusiveType' => $ExclusiveTypeRaw,
+            'LGB_Data' => array(
+                'Vfx' => $JSON_Vfx,
+                'PositionMarker' => $JSON_PositionMarker,
+                'Gimmick' => $JSON_Gimmick,
+                'Sound' => $JSON_Sound,
+                'EventNPC' => $JSON_EventNPC,
+                'Aetheryte' => $JSON_Aetheryte,
+                'EnvSpace' => $JSON_EnvSpace,
+                'PopRange' => $JSON_PopRange,
+                'exitrange' => $JSON_exitrange,
+                'MapRange' => $JSON_MapRange,
+                'EventObject' => $JSON_EventObject,
+                'EnvLocation' => $JSON_EnvLocation,
+                'Fate' => $JSON_Fate,
+                'EventRange' => $JSON_EventRange,
+                'CollisionBox' => $JSON_CollisionBox,
+                'LineVfx' => $JSON_LineVfx,
+                'ClientPath' => $JSON_ClientPath,
+                'TargetMarker' => $JSON_TargetMarker,
+                'ChairMarker' => $JSON_ChairMarker,
+                'PrefetchRange' => $JSON_PrefetchRange,
+                'Treasure' => $JSON_Treasure,
+                'BNPC' => $JSON_BNPC,
+                'Gathering' => $JSON_Gathering,
+            ),
+        );
+        //echo json_encode($JSONZoneInfo, JSON_PRETTY_PRINT);
+        $JSONAPIOUTPUT = json_encode($JSONZoneInfo, JSON_PRETTY_PRINT);
+        //write Api file
+        if (!file_exists("output/arrmtest/API/")) { mkdir("output/arrmtest/API/", 0777, true); }
+        $JSONAPI_File = fopen("output/arrmtest/API/$id.json", 'w');
+        fwrite($JSONAPI_File, $JSONAPIOUTPUT);
+        fclose($JSONAPI_File);
 
         $mappyOutput = implode($mappyOutput);
         sort($MonsterLayerString);
@@ -1523,11 +2620,6 @@ var ". $Type ."raw". $Hash ." = L.marker(map.unproject([". $PixelX .", ". $Pixel
 
         $NextMapLink = $teriID + 1;
         $PreviousMapLink = $teriID - 1;
-
-
-
-
-
 
 
 
@@ -1595,6 +2687,7 @@ var unknown = L.layerGroup();
 var Monster = L.layerGroup();
 var Treasure = L.layerGroup();
 ". $MonsterLayerArrayVar ."
+". $FATELayerArrayVar ."
 ". $output ."
 ". $jsonOutput ."
 ". $levelOutput ."
@@ -1683,7 +2776,13 @@ var baseTree = [
     label: 'Layers',
     children: [
       {label: 'Map Labels', layer: mapmarker},
-      {label: '<img src=../assets/icons/060000/060501.png width=18/>FATEs', layer: fate},
+      {label: '<img src=../assets/icons/060000/060501.png width=18/>FATEs', layer: fate,
+        selectAllCheckbox: true,
+        collapsed: true,
+        children: [
+        ". $FateLayerArray. "
+        ]
+      },
       {label: '<img src=../assets/icons/060000/060653.png width=18/>Currents', layer: current},
       {label: '<img src=../assets/icons/060000/060465.png width=18/>Fishing Spots', layer: fishingspot},
       {label: '<img src=../assets/icons/060000/061731.png width=18/><span title=\"Type = 51\">Quest Markers</span>', layer: questmarker},
@@ -1832,7 +2931,7 @@ var hash = new L.Hash(map, allMapLayers);
 <!--TerritoryType number : ". $id ."-->
 <!--Map number : ". $mapLinkToTeri ."-->
 <html style=\"height: 100%; margin: 0;\">
-<title>". $placename ."". $placenameSub ."</title>
+<title>". $Titleplacename ."". $TitleplacenameSub ."". $ExclusiveType ."</title>
 <head>
 <meta charset=\"UTF-8\">
 <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
@@ -1848,7 +2947,7 @@ var hash = new L.Hash(map, allMapLayers);
 <link type=\"application/json+oembed\" href=\"/oembed.json\" />
 <meta content=\"https://arealmremapped.com/images/embedlogo.png\" property=\"og:image\">
 <meta content=\"A Realm Remapped - Showing the true Eorzea.\" property=\"og:title\">
-<meta content=\"". $placename ."". $placenameSub ."
+<meta content=\"". $Titleplacename ."". $TitleplacenameSub ."". $ExclusiveType ."
 Aether Currents, Vistas, Treasure Maps, NPCs and more...\" property=\"og:description\">
 <meta content=\"https://arealmremapped.com/images/embedlogo.png\" property=\"og:image\">
 <meta name=\"twitter:card\" content=\"summary_large_image\">
@@ -1860,6 +2959,7 @@ Aether Currents, Vistas, Treasure Maps, NPCs and more...\" property=\"og:descrip
 <script src=\"../assets/js/easy-button.js\"></script>
 <script src=\"../assets/js/L.Control.Layers.Tree.js\"></script>
 <script src=\"../assets/js/l.ellipse.js\"></script>
+<script src=\"../assets/js/leaflet.rotatedMarker.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
 
 </head>
@@ -1869,7 +2969,7 @@ Aether Currents, Vistas, Treasure Maps, NPCs and more...\" property=\"og:descrip
   <a href=\"../index.html\" class=\"w3-bar-item w3-button w3-mobile w3-green\">Home</a>
   <a href=\"../". $NextMapLink ."/". $NextMapLink .".html\" class=\"w3-bar-item w3-button w3-mobile w3-green w3-right\">Next</a>
   <a href=\"../". $PreviousMapLink ."/". $PreviousMapLink .".html\" class=\"w3-bar-item w3-button w3-mobile w3-green w3-right\">Previous</a>
-  <span class=\"w3-bar-item w3-wide\"><b>". $placename ."". $placenameSub ."</b></span>
+  <span class=\"w3-bar-item w3-wide\"><b>". $Titleplacename ."". $TitleplacenameSub ."". $ExclusiveType ."</b></span>
 </div>
 
 <div id=\"map\" style=\"width: 100%; height: 100%; background: #000000;\"></div>
